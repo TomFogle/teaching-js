@@ -1,0 +1,19 @@
+.body{
+	background-image: url("https://images.unsplash.com/photo-1564862092955-f75b41f70b2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-position: center;
+}
+
+.center{
+	margin-left: 33em; 
+	margin-right: 33em;
+}
+
+
+.item {
+    width: 10em;
+}
+  
+#dogs {
+	margin-left: 33em; 
+	margin-right: 33em;
+}
