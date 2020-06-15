@@ -13,7 +13,7 @@ function isTheSame(nums)
 ////////
 }
 
-let arrfag = [5,5,5,5,5,5,5];
-let arrbutthole = [5,5,5,5,5,7,5,5,5];
-isTheSame(arrfag);
-isTheSame(arrbutthole);
+let arrLove = [5,5,5,5,5,5,5];
+let arrBooty = [5,5,5,5,5,7,5,5,5];
+isTheSame(arrLove);
+isTheSame(arrBooty);
