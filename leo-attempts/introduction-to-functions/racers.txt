@@ -1,0 +1,24 @@
+1) Make a list of 10+ numbers.
+
+a)
+	Calculate the average.
+b)  
+	Print the index of every odd number.
+	Index: {index}, value: {value}
+	Index: 5, Value: 7
+
+************************
+
+2) 
+
+16 people in a race. PLace finishes stored in array, where element 0 finished 1st and element 15 finished last. (Give them all "names".) 
+
+a)
+	Print all names in order. 	
+
+b)
+	Print everyone who finished in place that is a perfect square.
+
+*Bonus: Try to make all solutions use a function*
+
+
