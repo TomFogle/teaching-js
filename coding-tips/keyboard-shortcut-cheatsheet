@@ -1,0 +1,139 @@
+To best understand a shortcut/command, try it out for yourself. Our descriptions help, but nothing beats hands-on practice. It will help you visualize the explanations, which is crucial for learning in general, but especially in code.
+
+
+## Mac Users ##
+– – – – – – – – –
+⌘ = Command
+⇧ = Shift
+⌥ = Option
+⌃ = Control
+←↑↓→ = Arrow keys
+– – – – – – – – –
+
+Note:
+key1 + key2 means hold down key1, then press key2. For example, ⌘ + TAB means hold down ⌘, then press TAB while still holding ⌘.
+
+If there are more than two keys, hold down key1, then also hold down key2, then press key 3. For example, ⌘ + ⇧ + TAB means hold down ⌘, then also hold down ⇧, then press TAB while still holding ⌘ and ⇧.
+
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+The Basics – necessities to not go crazy while using a computer
+
+– The cursor is the blinking vertical line that shows where you are about to type. 
+– Click to move the cursor.
+– Click and drag to highlight text.
+
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + Z = Undo the last thing you typed or deleted
+⌘ + ⇧ + Z = Redo the thing you undid
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + C = Copy highlighted text.
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + V = Paste the text you copied
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + A = Select all text
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + R = Refresh page in browser
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + Q = Quit current application
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Switch – switch between tabs, programs, windows
+– – – – – – – – –
+⌘ + TAB
+– – – – – – – – –
+Switch to your most recently used program (Firefox, Sublime, etc).
+
+If you use ⌘ + TAB and let go of TAB (keep holding ⌘), you will see a menu of all your open programs. You can continue to cycle through open programs by hitting TAB. Let go of TAB to switch to the highlighted program. 
+
+If the program menu is open, use ⇧ + TAB to cycle the other direction. To open this menu and cycle in other direction from the get-go, use ⌘ + ⇧ + TAB.
+
+
+
+
+– – – – – – – – –
+⌃ + TAB
+– – – – – – – – –
+Just like ⌘ + TAB except it cycles through tabs in your browser (and some code editors). 
+
+Unlike Firefox, Chrome does not come with this function. You can go to
+
+https://chrome.google.com/webstore/detail/open-last-tab/naolnccddjabbhmjogiejjgocjnglmge?hl=en
+
+and add the extension to your browser. You can then use ⌥ + Q to toggle between the 2 most recent tabs, though its limited functionality ends there. If you want the same experience as with ⌘ + TAB, I recommend using Firefox.
+
+– – – – – – – – –
+⌘ + ~
+– – – – – – – – –
+Switch between windows within a program. 
+
+For example, if you have multiple Firefox windows open (not talking about tabs) or multiple Word documents open, you can switch between them this way. As usual, ⌘ + ⇧ + ~ cycles backwards.
+
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Move – move cursor within a file
+– – – – – – – – –
+⌘ + arrow keys 
+– – – – – – – – –
+⌘ + ↑ = Go to beginning of file (Top of document, beginning of first line)
+⌘ + ↓ = Go to end of file, also known as EOF (Bottom of document, end of last line)
+⌘ + ← = Go to beginning of current line
+⌘ + → = Go to end of current line
+
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Highlight – select small portions of text
+– – – – – – – – –
+⇧ + arrow keys 
+– – – – – – – – –
+In general, ⇧ selects things. You can combine ⇧ with other keys to select all text between where the cursor was to where the cursor moved. 
+
+⇧ + ↑ = Does what the ↑ arrow key does, plus selects all text along the way.
+⇧ + ↓ = Does what the ↓ arrow key does, plus selects all text along the way.
+⇧ + ← = Does what the ← arrow key does, plus selects characters along the way.
+⇧ + → = Does what the → arrow key does, plus selects characters along the way.
+
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Quick Select – select lines and large chunks of text
+– – – – – – – – –
+You can combine functionalities of multiple shortcuts at once by understanding the general purpose of different keys.
+
+For example, if you were at the start of a line, to select the whole line you can use ⌘ + ⇧ + →. The ⌘ will jump you to the end and ⇧ will select everything along the way. If you were somewhere in the middle of the line, you would grab everything from there up to the end.
+
+⌘ + ⇧ + → = select from cursor to end of line.
+⌘ + ⇧ + ← = select from cursor to beginning of line.
+
+– – – – – – – – –
+
+
+
+
+
+
+
+
+
+⇧
+
+⌥
+
+⌃
+
+
+
+
+
+Option delete to delete entire words at once
+Command click to add multiple cursors 
+Command shift d to duplicate entire line
+Shift tab or tab over highlighted text to shift text
+Find all instances of a word, edit those instances all at same time
+Highlight entire file
+Comment out entire sections without having to highlight ( /* thing) 
+Comment out highlighted words (basic command slash way)
+Basic command c, command v, command z, command shift z, command r stuff (for complete newbies)
+Shift arrow keys to highlight
+Shift option arrows to highlight entire words
+Command enter to jump to new line without brining text with you
+
