@@ -1,33 +1,51 @@
-To best understand a shortcut/command, try it out for yourself. Our descriptions help, but nothing beats hands-on practice. It will help you visualize the explanations, which is crucial for learning in general, but especially in code.
+Welcome!
+
+This is a guide to keyboard shortcuts that will save you a ton of time/energy while coding and using your computer in general. 
+
+We also cover shortcuts for Sublime Text, the free text editor we recommend you use to write code.
+
+Don’t understand a shortcut/command? Try it out for yourself! Our descriptions help, but nothing beats hands-on practice. It will help you visualize the explanations, which is crucial for learning in general, but especially in code.
 
 
-## Mac Users ##
+
+#### Mac Users ####
+
+
+## Symbols
+These symbols represent specific keys on your keyboard 
 – – – – – – – – –
 ⌘ = Command
 ⇧ = Shift
 ⌥ = Option
 ⌃ = Control
 ←↑↓→ = Arrow keys
+DEL = delete key
+TAB = tab key
 – – – – – – – – –
-
 Note:
 key1 + key2 means hold down key1, then press key2. For example, ⌘ + TAB means hold down ⌘, then press TAB while still holding ⌘.
 
 If there are more than two keys, hold down key1, then also hold down key2, then press key 3. For example, ⌘ + ⇧ + TAB means hold down ⌘, then also hold down ⇧, then press TAB while still holding ⌘ and ⇧.
 
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-The Basics – necessities to not go crazy while using a computer
+
+
+## The Basics
+Necessities to not go crazy while using a computer
 
 – The cursor is the blinking vertical line that shows where you are about to type. 
 – Click to move the cursor.
 – Click and drag to highlight text.
 
 – – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + S = Save a file
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
 ⌘ + Z = Undo the last thing you typed or deleted
 ⌘ + ⇧ + Z = Redo the thing you undid
 – – – – – – – – – – – – – – – – – – – – – – – – – – –
-⌘ + C = Copy highlighted text.
+⌘ + C = Copy highlighted text
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + X = Copy and delete highlighted text (cut)
 – – – – – – – – – – – – – – – – – – – – – – – – – – –
 ⌘ + V = Paste the text you copied
 – – – – – – – – – – – – – – – – – – – – – – – – – – –
@@ -36,20 +54,55 @@ The Basics – necessities to not go crazy while using a computer
 ⌘ + R = Refresh page in browser
 – – – – – – – – – – – – – – – – – – – – – – – – – – –
 ⌘ + Q = Quit current application
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-Switch – switch between tabs, programs, windows
+
+
+
+## Spotlight 
+Search for programs and files quickly
+– – – – – – – – –
+This is a real life-saver. It’s often much easier to open programs this way than through Finder or the dock at the bottom of the screen. Simply bring up Spotlight, start typing until it suggests the file or program you want to open, and hit enter/return.
+
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌘ + space = open Spotlight
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+
+For some unfortunate few, this Spotlight shortcut may not work. Fortunately, there’s an easy fix. Go to the apple symbol at the top-left of your screen.
+
+Apple > System Preferences > Keyboard > Shortcuts > Spotlight > Show Spotlight Search
+
+Check the “Show Spotlight Search” box.
+
+
+
+
+## Browser Shortcuts 
+ New tab, close tab, reopen tab in browser
+– – – – – – – – –
+Browser lingo recap: A window has tabs in the similarly to how a binder has tabs.
+
+⌘ + T = open a new tab
+⌘ + W = close current tab
+⌘ + ⇧ + T = reopen last closed tab
+
+⌘ + N = open a new window
+⌘ + ⇧ + W = close current window
+⌘ + ⇧ + N = reopen last closed tab
+
+
+
+
+## Switch  
+Switch between tabs, programs, windows
 – – – – – – – – –
 ⌘ + TAB
 – – – – – – – – –
 Switch to your most recently used program (Firefox, Sublime, etc).
 
-If you use ⌘ + TAB and let go of TAB (keep holding ⌘), you will see a menu of all your open programs. You can continue to cycle through open programs by hitting TAB. Let go of TAB to switch to the highlighted program. 
+If you use ⌘ + TABand let go of TAB (keep holding ⌘), you will see a menu of all your open programs. You can continue to cycle through open programs by hitting TAB. Let go of TAB to switch to the highlighted program. 
 
 If the program menu is open, use ⇧ + TAB to cycle the other direction. To open this menu and cycle in other direction from the get-go, use ⌘ + ⇧ + TAB.
-
-
-
 
 – – – – – – – – –
 ⌃ + TAB
@@ -63,15 +116,16 @@ https://chrome.google.com/webstore/detail/open-last-tab/naolnccddjabbhmjogiejjgo
 and add the extension to your browser. You can then use ⌥ + Q to toggle between the 2 most recent tabs, though its limited functionality ends there. If you want the same experience as with ⌘ + TAB, I recommend using Firefox.
 
 – – – – – – – – –
-⌘ + ~
+⌘ + ~ = Switch between windows within a program. 
 – – – – – – – – –
-Switch between windows within a program. 
 
 For example, if you have multiple Firefox windows open (not talking about tabs) or multiple Word documents open, you can switch between them this way. As usual, ⌘ + ⇧ + ~ cycles backwards.
 
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-Move – move cursor within a file
+
+
+## Move 
+Move cursor within a file
 – – – – – – – – –
 ⌘ + arrow keys 
 – – – – – – – – –
@@ -81,8 +135,10 @@ Move – move cursor within a file
 ⌘ + → = Go to end of current line
 
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-Highlight – select small portions of text
+
+
+## Highlight 
+Select small portions of text
 – – – – – – – – –
 ⇧ + arrow keys 
 – – – – – – – – –
@@ -94,8 +150,10 @@ In general, ⇧ selects things. You can combine ⇧ with other keys to select al
 ⇧ + → = Does what the → arrow key does, plus selects characters along the way.
 
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-Quick Select – select lines and large chunks of text
+
+
+## Quick Select 
+Select entire lines and large chunks of text
 – – – – – – – – –
 You can combine functionalities of multiple shortcuts at once by understanding the general purpose of different keys.
 
@@ -104,36 +162,91 @@ For example, if you were at the start of a line, to select the whole line you ca
 ⌘ + ⇧ + → = select from cursor to end of line.
 ⌘ + ⇧ + ← = select from cursor to beginning of line.
 
+Similarly, we can use ⌘ and ⇧ together with ↑ or ↓.
+
+⌘ + ⇧ + ↑ = select from cursor to beginning of file.
+⌘ + ⇧ + ↓ = select from cursor to end of file.
+
+One common use of ⌘ + ⇧ + ↑ and ⌘ + ⇧ + ↓  is to delete paragraphs. Press ⌘ + ⇧ and then ↑ or ↓ a few times to grab a lot of lines quickly, then zap ‘em away with DEL.
+
+
+
+
+## Quick Delete 
+Delete entire words and entire lines 
 – – – – – – – – –
+In general, ⌥ tends to affect whole words and ⌘ tends to affect whole lines.
+
+⌥ + DEL = delete a whole word instead of a single character
+⌘ + DEL = delete everything from cursor to beginning of line
+
+Usually people use ⌘ + DEL when they want to delete a whole line by doing ⌘ + → to go to the end of the line, then ⌘ + DEL to delete the whole thing. 
 
 
 
 
+## Sublime Text 
+
+Note: 
+All previous shortcuts/commands also work in Sublime. The following shortcuts/commands are specific to Sublime and may not work in other programs. 
+
+⌘ + click = add multiple cursors
+
+Hold down ⌘ and click somewhere else on the screen to add a second cursor. Do this as many times as you’d like to add multiple cursors. This allows you to add/delete text in multiple places at the same time. 
+
+⌘ + 
+
+Sublime stuff
 
 
-
-
-
-⇧
-
-⌥
-
-⌃
-
-
-
-
-
-Option delete to delete entire words at once
-Command click to add multiple cursors 
 Command shift d to duplicate entire line
-Shift tab or tab over highlighted text to shift text
 Find all instances of a word, edit those instances all at same time
-Highlight entire file
 Comment out entire sections without having to highlight ( /* thing) 
 Comment out highlighted words (basic command slash way)
-Basic command c, command v, command z, command shift z, command r stuff (for complete newbies)
-Shift arrow keys to highlight
-Shift option arrows to highlight entire words
 Command enter to jump to new line without brining text with you
+Shift tab or tab over highlighted text to shift text
 
+Command Line Stuff
+pwd
+ls
+-a
+-l
+-u
+All git stuff
+More once i have time to type
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lost Mac user? Click here and then on the word “Bookmark” to go home!
+
+#### Windows Users ####
+– – – – – – – – –
+## Symbols 
+## These symbols represent specific keys on your keyboard
+## The Basics 
+## Necessities to not go crazy while using a computer
+## Spotlight
+## Search for programs and files quickly
+## Browser Shortcuts 
+## New, close, reopen tab in browser
+## Switch
+## Switch between tabs, programs, windows
+## Move 
+## Move cursor within a file
+## Highlight
+## Select small portions of text
+## Quick Select 
+## Select entire lines and large chunks of text
+## Quick Delete 
+## Delete entire words and entire lines 
+## Sublime Text
