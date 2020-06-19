@@ -232,7 +232,11 @@ Alternatively, type:
 /* */ to block comment all text between /* and */
 
 Note that comments are only useful in non-text files (.js, .html, etc.).
-Line Manipulation
+
+
+
+
+## Line Manipulation
 Select and move lines around
 – – – – – – – – –
 ⌘ + L = Select current line, hold ⌘ and hit L more times to select more lines
@@ -251,7 +255,7 @@ Select and move lines around
 Find and replace one or all instances of a specific word/string/character
 
 ⌘ + F = Find text in file
-⌘ + ⌥  + F = Find and replace text in file
+⌘ + ⌥ + F = Find and replace text in file
 
 ⌘ + click = add multiple cursors
 
@@ -259,14 +263,17 @@ Hold down ⌘ and click somewhere else on the screen to add a second cursor. Do 
 
 ⌘ + D = Highlight word the cursor is on, find all instances of word in document
     
-Press ⌘ + D again to highlight next instance of word, do this as many times as you’d like to highlight multiple instances. Now you can edit these instances simultaneously. 
+	Press ⌘ + D again to highlight next instance of word, do this as many times as you’d like to highlight multiple instances. Now you can edit these instances simultaneously. 
 
-Press ⌘ + K to skip an instance of the word.
+	Press ⌘ + K to skip an instance of the word.
 
 ⌘ + ⌃ + G = Highlight all instances of word the cursor is on, edit all instances simultaneously.
 
 ⌘ + ⌥ + G = Show all instances of word the cursor is on.
 
+
+General Note:
+Press ‘Esc’ to exit menus like ones brought up with ⌃ + F.
 
 
 
@@ -291,6 +298,7 @@ These symbols represent specific keys on your keyboard
 ↵ = Enter/Return
 DEL = Delete key
 TAB = Tab key
+Fn = Function key
 
 You’ll also want to remember the ‘Home’ and ‘End’ keys in the upper right of your keyboard
 – – – – – – – – –
@@ -365,7 +373,8 @@ Switch between tabs, programs, windows
 – – – – – – – – –
 Switch to your most recently used program (Firefox, Sublime, etc).
 
-If you use ⎇ + TAB and let go of TAB (keep holding ⎇), you will see a menu of all your open programs. You can continue to cycle through open programs by hitting TAB. Let go of TAB to switch to the highlighted program. 
+If you use ⎇ + TAB and let go of TAB (keep holding ⎇), you will see a menu of all your open programs. You can continue to cycle through open programs by hitting TAB. Let go of TAB to switch to the highlighted program.
+
 If the program menu is open, use ⇧ + TAB to cycle the other direction. To open this menu and cycle in other direction from the get-go, use ⎇ + ⇧ + TAB.
 
 – – – – – – – – –
@@ -451,7 +460,7 @@ Usually people use ⇧ + Home + DEL when they want to delete a whole line by pre
 
 
 Note: 
-All previous shortcuts/commands (minus browser shortcuts) also work in Sublime. The following shortcuts/commands are specific to Sublime and may not work in other programs. Additionally, some commands will not work in Sublime unless you save your work as a code file (.js, .html, etc.)
+All previous shortcuts/commands (minus browser shortcuts) also work in Sublime. The following shortcuts are specific to Sublime and may not work in other programs. Additionally, some commands will not work in Sublime unless you save your work as a code file (.js, .html, etc.)
 
 
 
@@ -491,14 +500,18 @@ Alternatively, type:
 /* */ to block comment all text between /* and */
 
 Note that comments are really only useful in non-text files (.js, .html, etc.).
-Line Manipulation
+
+
+
+
+## Line Manipulation
 Select and move lines around
 – – – – – – – – –
 ⌃ + L = Select current line, hold ⌘ and hit L more times to select more lines
 ⌃ + ⇧ + D = Duplicate whichever line the cursor is on
 
-⎇  + ⌃ + ↑ = move current line up
-⎇  + ⌃ + ↓ = move current line down
+⌃ + ⇧ + ↑ = move current line up
+⌃ + ⇧ + ↓ = move current line down
 
 ⌃ + ↵ = Insert a line before current line, moves cursor to new line
 ⌃ + ⇧ + ↵ = Insert a line after current line, moves cursor to new line
@@ -510,20 +523,25 @@ Select and move lines around
 Find and replace one or all instances of a specific word/string/character
 
 ⌃ + F = Find text in file
-⌃ + ⎇   + F = Find and replace text in file
+⌃ + ⇧ + F = Find and replace text in file
 
 ⌃ + click = add multiple cursors
 
-Hold down ⌃ and click somewhere else on the screen to add a second cursor. Do this as many times as you’d like to add multiple cursors. This allows you to type/delete text in multiple places at the same time. 
+	Hold down ⌃ and click somewhere else on the screen to add a second cursor. Do this as many times as you’d like to add multiple cursors. This allows you to type/delete text in multiple places at the same time. 
 
 ⌃ + D = Highlight word the cursor is on, find all instances of word in document
     
-Press ⌃ + D again to highlight next instance of word, do this as many times as you’d like to highlight multiple instances. Now you can edit these instances simultaneously. 
+	Press ⌃ + D again to highlight next instance of word, do this as many times as you’d like to highlight multiple instances. Now you can edit these instances simultaneously. 
 
-Press ⌃ + K to skip an instance of the word.
+	Press ⌃ + K to skip an instance of the word.
 
-⌃ + ⎇  + G = Highlight all instances of word the cursor is on, edit all instances simultaneously.
+Fn + ⎇ + F3 = Highlight all instances of word the cursor is on, edit all instances simultaneously.
 
-⌃ + ⎇  + G = Show all instances of word the cursor is on.
+Fn + F3 = Show all instances of word the cursor is on.
+
+
+General Note:
+Press ‘Esc’ to exit menus like ones brought up with ⌃ + F.
+
 
 
