@@ -167,7 +167,7 @@ Similarly, we can use ⌘ and ⇧ together with ↑ or ↓.
 ⌘ + ⇧ + ↑ = select from cursor to beginning of file.
 ⌘ + ⇧ + ↓ = select from cursor to end of file.
 
-One common use of ⌘ + ⇧ + ↑ and ⌘ + ⇧ + ↓  is to delete paragraphs. Press ⌘ + ⇧ and then ↑ or ↓ a few times to grab a lot of lines quickly, then zap ‘em away with DEL.
+One common use of ⇧ + ↑ and ⇧ + ↓  is to delete paragraphs. Press ⇧ and then ↑ or ↓ a few times to grab a lot of lines quickly, then zap ‘em away with DEL.
 
 
 
@@ -180,73 +180,350 @@ In general, ⌥ tends to affect whole words and ⌘ tends to affect whole lines.
 ⌥ + DEL = delete a whole word instead of a single character
 ⌘ + DEL = delete everything from cursor to beginning of line
 
-Usually people use ⌘ + DEL when they want to delete a whole line by doing ⌘ + → to go to the end of the line, then ⌘ + DEL to delete the whole thing. 
+Usually people use ⌘ + DEL when they want to delete a whole line by doing ⌘ + → to go to the end of the line, then ⌘ + DEL to delete the whole thing.
 
 
 
 
-## Sublime Text 
+——————————————————————
+|| Mac Sublime Text ||
+——————————————————————
+
 
 Note: 
-All previous shortcuts/commands also work in Sublime. The following shortcuts/commands are specific to Sublime and may not work in other programs. 
+All previous shortcuts/commands (minus browser shortcuts) also work in Sublime. The following shortcuts are specific to Sublime and may not work in other programs. Some commands will not work in Sublime unless you save your work as a code file (.js, .html, etc.)
+
+
+
+
+## Copy/Paste 
+Copy, cut and paste with additional Sublime functionalities
+– – – – – – – – –
+⌘ + C = Copies text
+⌘ + X = Cuts (copies+deletes) highlighted text or whole line if no text is selected
+⌘ + V = Paste text
+⌘ + ⇧ + V = Paste text with proper indents
+
+
+
+
+## Tabs
+Tab lines over while typing anywhere in line
+– – – – – – – – –
+TAB = indent line if cursor is at the beginning of the line
+⇧ + TAB = un-indent line if cursor is at the beginning of the line
+
+⌘ + ] = indent current line
+⌘ + [ = un-indent current line
+
+You can highlight multiple lines and use TAB and ⇧ + TAB to tab/untab all highlighted lines.
+
+
+
+
+## Commenting
+Comment out lines and blocks of code
+– – – – – – – – –
+⌘ + / = Comment/un-comment current line or highlighted lines
+⌘ + ⌥ + / = Block comment/unblock comment highlighted text
+ 
+Alternatively, type:
+// to comment out rest of line
+/* */ to block comment all text between /* and */
+
+Note that comments are only useful in non-text files (.js, .html, etc.).
+Line Manipulation
+Select and move lines around
+– – – – – – – – –
+⌘ + L = Select current line, hold ⌘ and hit L more times to select more lines
+⌘ + ⇧ + D = Duplicate whichever line the cursor is on
+
+⌃ + ⌘ + ↑ = move current line up
+⌃ + ⌘ + ↓ = move current line down
+
+⌘ + ↵ = Insert a line before current line, moves cursor to new line
+⌘ + ⇧ + ↵ = Insert a line after current line, moves cursor to new line
+
+
+
+
+## Find/Replace Text
+Find and replace one or all instances of a specific word/string/character
+
+⌘ + F = Find text in file
+⌘ + ⌥  + F = Find and replace text in file
 
 ⌘ + click = add multiple cursors
 
-Hold down ⌘ and click somewhere else on the screen to add a second cursor. Do this as many times as you’d like to add multiple cursors. This allows you to add/delete text in multiple places at the same time. 
+Hold down ⌘ and click somewhere else on the screen to add a second cursor. Do this as many times as you’d like to add multiple cursors. This allows you to type/delete text in multiple places at the same time. 
 
-⌘ + 
+⌘ + D = Highlight word the cursor is on, find all instances of word in document
+    
+Press ⌘ + D again to highlight next instance of word, do this as many times as you’d like to highlight multiple instances. Now you can edit these instances simultaneously. 
 
-Sublime stuff
+Press ⌘ + K to skip an instance of the word.
 
+⌘ + ⌃ + G = Highlight all instances of word the cursor is on, edit all instances simultaneously.
 
-Command shift d to duplicate entire line
-Find all instances of a word, edit those instances all at same time
-Comment out entire sections without having to highlight ( /* thing) 
-Comment out highlighted words (basic command slash way)
-Command enter to jump to new line without brining text with you
-Shift tab or tab over highlighted text to shift text
-
-Command Line Stuff
-pwd
-ls
--a
--l
--u
-All git stuff
-More once i have time to type
+⌘ + ⌥ + G = Show all instances of word the cursor is on.
 
 
 
 
+———————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
 
 
-
-
-
-
-
-
-
-Lost Mac user? Click here and then on the word “Bookmark” to go home!
 
 #### Windows Users ####
-– – – – – – – – –
+
+
 ## Symbols 
-## These symbols represent specific keys on your keyboard
+These symbols represent specific keys on your keyboard
+– – – – – – – – –
+⊞ = Windows key (the key with the Windows symbol on it)
+⌃ = Control 
+⎇ = Alt
+⇧ = Shift
+←↑↓→ = Arrow keys
+↵ = Enter/Return
+DEL = Delete key
+TAB = Tab key
+
+You’ll also want to remember the ‘Home’ and ‘End’ keys in the upper right of your keyboard
+– – – – – – – – –
+Note:
+key1 + key2 means hold down key1, then press key2. For example, ⌃ + TAB means hold down ⌃, then press TAB while still holding ⌃.
+
+If there are more than two keys, hold down key1, then also hold down key2, then press key 3. For example, ⌃ + ⇧ + TAB means hold down ⌃, then also hold down ⇧, then press TAB while still holding ⌃ and ⇧.
+
+
+
+
 ## The Basics 
-## Necessities to not go crazy while using a computer
-## Spotlight
-## Search for programs and files quickly
+Necessities to not go crazy while using a computer
+
+– The cursor is the blinking vertical line that shows where you are about to type. 
+– Click to move the cursor.
+– Click and drag to highlight text.
+
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + S = Save a file
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + Z = Undo the last thing you typed or deleted
+⌃ + ⇧ + Z = Redo the thing you undid
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + C = Copy highlighted text
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + X = Copy and delete highlighted text (cut)
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + V = Paste the text you copied
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + A = Select all text
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + R = Refresh page in browser
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+⌃ + Q = Quit current application
+– – – – – – – – – – – – – – – – – – – – – – – – – – –
+
+
+
+
+## Windows Search Bar
+Search for programs and files quickly
+
+⊞ = open up Search bar
+
+This is a real life-saver. It’s often much easier to open programs this way. Simply bring up the Search function, start typing until it suggests the file or program you want to open, and hit ↵.
+
+
+
+
 ## Browser Shortcuts 
-## New, close, reopen tab in browser
+New, close, reopen tabs in browser
+– – – – – – – – –
+Browser lingo recap: A window has tabs in the same way a binder has tabs.
+– – – – – – – – –
+⌃ + T = open a new tab
+⌃ + W = close current tab
+⌃ + ⇧ + T = reopen last closed tab
+– – – – – – – – –
+⌃ + N = open a new window
+⌃ + ⇧ + W = close current window
+⌃ + ⇧ + T = reopen last closed window (works for tabs and windows)
+– – – – – – – – –
+
+
+
+
 ## Switch
-## Switch between tabs, programs, windows
-## Move 
-## Move cursor within a file
-## Highlight
-## Select small portions of text
+Switch between tabs, programs, windows
+– – – – – – – – –
+⎇ + TAB 
+– – – – – – – – –
+Switch to your most recently used program (Firefox, Sublime, etc).
+
+If you use ⎇ + TAB and let go of TAB (keep holding ⎇), you will see a menu of all your open programs. You can continue to cycle through open programs by hitting TAB. Let go of TAB to switch to the highlighted program. 
+If the program menu is open, use ⇧ + TAB to cycle the other direction. To open this menu and cycle in other direction from the get-go, use ⎇ + ⇧ + TAB.
+
+– – – – – – – – –
+⌃ + TAB
+– – – – – – – – –
+Just like ⎇ + TAB except it cycles through tabs in your browser (and some code editors). 
+
+Unlike Firefox, Chrome does not come with this function. You can go to
+
+https://chrome.google.com/webstore/detail/open-last-tab/naolnccddjabbhmjogiejjgocjnglmge?hl=en
+
+and add the extension to your browser. You can then use ⎇ + Q to toggle between the 2 most recent tabs, though its limited functionality ends there. If you want the same experience as with ⎇ + TAB, I recommend using Firefox.
+
+
+
+
+## Move
+Move cursor within a file
+– – – – – – – – –
+⌃ + Home/End
+– – – – – – – – –
+⌃ + Home = Go to beginning of file (Top of document, beginning of first line)
+⌃ + End = Go to end of file, also known as EOF (Bottom of document, end of last line)
+Home = Go to beginning of current line
+End = Go to end of current line
+
+
+
+
+## Highlight 
+Select small portions of text
+– – – – – – – – –
+⇧ + arrow keys 
+– – – – – – – – –
+In general, ⇧ selects things. You can combine ⇧ with other keys to select all text between where the cursor was to where the cursor moved. 
+
+⇧ + ↑ = Does what the ↑ arrow key does, plus selects all text along the way.
+⇧ + ↓ = Does what the ↓ arrow key does, plus selects all text along the way.
+⇧ + ← = Does what the ← arrow key does, plus selects characters along the way.
+⇧ + → = Does what the → arrow key does, plus selects characters along the way.
+
+
+
+
 ## Quick Select 
-## Select entire lines and large chunks of text
-## Quick Delete 
-## Delete entire words and entire lines 
-## Sublime Text
+Select entire lines and large chunks of text
+– – – – – – – – –
+You can combine functionalities of multiple shortcuts at once by understanding the general purpose of different keys.
+
+For example, if you were at the start of a line, to select the whole line you can use ⇧ + End. The  ‘End’ will jump you to the end and ⇧ will select everything along the way. If you were somewhere in the middle of the line, you would grab everything from there up to the end.
+
+⇧ + Home = select from cursor to end of line.
+⇧ + End = select from cursor to beginning of line.
+
+Similarly, we can use ⌃ and ⇧ together with ‘Home’ or ‘End’.
+
+⌃ + ⇧ + Home = select from cursor to beginning of file.
+⌃ + ⇧ + End = select from cursor to end of file.
+
+One common use of ⇧ + ↑ and ⇧ + ↓  is to delete paragraphs. Press ⇧ and then ↑ or ↓ a few times to grab a lot of lines quickly, then zap ‘em away with DEL.
+
+
+
+
+## Quick Delete
+Delete entire words and entire lines
+– – – – – – – – –
+In general, ⌃ tends to affect whole words and ⌃ tends to affect whole lines.
+
+⌃ + DEL = delete a whole word instead of a single character
+⇧ + Home + DEL = delete everything from cursor to beginning of line
+⇧ + End + DEL = delete everything from cursor to beginning of line
+
+
+Usually people use ⇧ + Home + DEL when they want to delete a whole line by pressing ‘End’ to go to the end of the line, then ⇧ + Home + DEL to delete the whole thing. You could similarly go to the beginning of the line with ‘Home’ and then ⇧ + End + DEL to delete the line. Whichever floats your boat.
+
+
+
+
+——————————————————————————
+|| Windows Sublime Text ||
+——————————————————————————
+
+
+Note: 
+All previous shortcuts/commands (minus browser shortcuts) also work in Sublime. The following shortcuts/commands are specific to Sublime and may not work in other programs. Additionally, some commands will not work in Sublime unless you save your work as a code file (.js, .html, etc.)
+
+
+
+
+## Copy/Paste 
+Copy, cut and paste with additional Sublime functionalities
+– – – – – – – – –
+⌃ + C = Copies text
+⌃ + X = Cuts (copies+deletes) highlighted text or whole line if no text is selected
+⌃ + V = Paste text
+⌃ + ⇧ + V = Paste text with proper indents
+
+
+
+
+## Tabs
+Tab lines over while typing anywhere in line
+– – – – – – – – –
+TAB = indent line if cursor is at the beginning of the line
+⇧ + TAB = un-indent line if cursor is at the beginning of the line
+
+⌃ + ] = indent current line
+⌃ + [ = un-indent current line
+
+You can highlight multiple lines and use TAB and ⇧ + TAB to tab/untab all highlighted lines.
+
+
+
+
+## Commenting
+Comment out lines and blocks of code
+– – – – – – – – –
+⌃ + / = Comment/un-comment current line or highlighted lines
+ 
+Alternatively, type:
+// to comment out rest of line
+/* */ to block comment all text between /* and */
+
+Note that comments are really only useful in non-text files (.js, .html, etc.).
+Line Manipulation
+Select and move lines around
+– – – – – – – – –
+⌃ + L = Select current line, hold ⌘ and hit L more times to select more lines
+⌃ + ⇧ + D = Duplicate whichever line the cursor is on
+
+⎇  + ⌃ + ↑ = move current line up
+⎇  + ⌃ + ↓ = move current line down
+
+⌃ + ↵ = Insert a line before current line, moves cursor to new line
+⌃ + ⇧ + ↵ = Insert a line after current line, moves cursor to new line
+
+
+
+
+## Find/Replace Text
+Find and replace one or all instances of a specific word/string/character
+
+⌃ + F = Find text in file
+⌃ + ⎇   + F = Find and replace text in file
+
+⌃ + click = add multiple cursors
+
+Hold down ⌃ and click somewhere else on the screen to add a second cursor. Do this as many times as you’d like to add multiple cursors. This allows you to type/delete text in multiple places at the same time. 
+
+⌃ + D = Highlight word the cursor is on, find all instances of word in document
+    
+Press ⌃ + D again to highlight next instance of word, do this as many times as you’d like to highlight multiple instances. Now you can edit these instances simultaneously. 
+
+Press ⌃ + K to skip an instance of the word.
+
+⌃ + ⎇  + G = Highlight all instances of word the cursor is on, edit all instances simultaneously.
+
+⌃ + ⎇  + G = Show all instances of word the cursor is on.
+
+
