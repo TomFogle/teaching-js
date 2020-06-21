@@ -1,0 +1,42 @@
+Welcome!
+
+This is a guide to Command Line shortcuts.
+
+To navigate to a specific section, click this symbol, located towards the top-left of your screen:
+    
+Then, click the name of the section you’re looking for. 
+
+Mac users should start at the ####Mac Users#### section, while Windows users should start at the ####Windows User#### section. 
+
+——————————————————————————————————————————
+*WARNING!* Some of these commands cannot be undone. Deleted files are not moved to the trash can. Unless you made a backup, there is no backup file. Running commands without thinking them through can delete your files forever. Until you feel very comfortable with these commands, only use them when following along with us.
+
+If you use these commands and accidentally delete important files (and you want them back), IMMEDIATELY turn off your computer, bring it to a data recovery services professional, and explain what happened. They might be able to extract memory from the computer and salvage lost files. The reason there’s a smidge of hope is because deleting a file only tells the computer it can overwrite that part of memory. The information is not gone until it’s overwritten.
+
+All this being said, Command Line is a fun and useful tool! We just want to make sure you’re careful. Almost no one makes the mistakes we’ve described, but it can happen. Better to be safe than sorry, like looking both ways before you cross the street. 
+——————————————————————————————————————————
+
+Note to Windows 10 users (if you don’t have Windows 10, you should consider upgrading): 
+
+Download the Windows Subsystem for Linux extension for your command prompt or you’ll have a much harder time. Follow the tutorial here:
+
+https://www.youtube.com/watch?v=5RTSlby-l9w
+
+
+
+
+## Symbols/Conventions
+Command Line and instructional symbols/conventions
+– – – – – – – – –
+Terminal (Mac) / Command Prompt (Windows) = Program for command line
+Shell = Terminal / Command Prompt window
+Directory = Folder
+
+[brackets] = Insert appropriate file/directory/etc. name here
+For example,
+
+mv [file] [newfile]
+
+means type a file name in place of [file] and a directory instead of [newfile]. E.g.
+
+mv recipes.txt recipe-folder
