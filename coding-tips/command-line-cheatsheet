@@ -9,7 +9,7 @@ Then, click the name of the section you’re looking for.
 Mac users should start at the ####Mac Users#### section, while Windows users should start at the ####Windows User#### section. 
 
 ——————————————————————————————————————————
-*WARNING!* Some of these commands cannot be undone. Deleted files are not moved to the trash can. Unless you made a backup, there is no backup file. Running commands without thinking them through can delete your files forever. Until you feel very comfortable with these commands, only use them when following along with us.
+** WARNING ** Some of these commands cannot be undone. Deleted files are not moved to the trash can. Unless you made a backup, there is no backup file. Running commands without thinking them through can delete your files forever. Until you feel very comfortable with these commands, only use them when following along with us.
 
 If you use these commands and accidentally delete important files (and you want them back), IMMEDIATELY turn off your computer, bring it to a data recovery services professional, and explain what happened. They might be able to extract memory from the computer and salvage lost files. The reason there’s a smidge of hope is because deleting a file only tells the computer it can overwrite that part of memory. The information is not gone until it’s overwritten.
 
@@ -22,17 +22,21 @@ Download the Windows Subsystem for Linux extension for your command prompt or yo
 
 https://www.youtube.com/watch?v=5RTSlby-l9w
 
+– – – – – – – – –
+
 
 
 
 ## Symbols/Conventions
-Command Line and instructional symbols/conventions
+Command Line and instructional symbols/conventions.
+If you forgot the meaning of a symbol from the keyboard-shortcuts document, click here.
 – – – – – – – – –
 
 Terminal (Mac) / Command Prompt (Windows) = Program for command line
 Shell = Terminal / Command Prompt window
 Directory = Folder
 Flag = A single hyphen modifier such as -r or a double hyphen modifier such as --version
+Argument = Parameter that you feed into a command for it to work, see mv example below
 
 – – – – – – – – –
 
@@ -41,10 +45,9 @@ For example,
 
 	mv [file] [directory]
 
-means type a file name in place of [file] and a directory instead of [directory]. For example,
+means type a file name in place of [file] (the file that you want to move) and a directory instead of [directory] (the directory where you want the file to go) without the brackets. For example,
 
 	mv recipes.txt recipe-folder
-
 
 ** Note:
 	– Every command, flag, and argument MUST be separated by a space.
@@ -54,23 +57,104 @@ means type a file name in place of [file] and a directory instead of [directory]
     	mv somefile somewheOoopsNvm clear
 	will not clear your screen. The computer will not know to ignore the first chunk of text.
 	
-
-
-
 – – – – – – – – –
 
 / = root directory, the topmost level of the system drive
-~ = home directory, under the root directory, looks like /Users/<short username>
+~ = home directory, under the root directory, looks like /Users/<username>
 . = current directory
 .. = previous directory
 > = overwrite file
->> = append to file
+>> = append (add to end of) to file
+* = wildcard symbol
+$ = default symbol for beginning of terminal line – you need not type it when trying commands
+
+– – – – – – – – –
 
 
 
 
-## Directories
-Making and moving around directories
+## Rules
+Important practices when using command line
+– – – – – – – – –
+
+– Every command, flag, and argument MUST be separated by a space.
+
+– All commands (not necessarily flags or arguments) are strictly lowercase.
+
+– Files and directories are listed in alphabetical order. All uppercase is considered to be before lowercase letters alphabetically. It does not list files and directories separately.
+
+– You cannot type a bunch then stop and run a different command without deleting the rest first. 
+	
+	For example,
+	
+	    mv somefile somewheOoopsNvm clear
+	
+	will not clear your screen. The computer will not know to ignore the first chunk of text.
+
+– – – – – – – – –
+
+
+
+
+## General Commands
+Useful commands across a variety of categories
+– – – – – – – – –
+
+clear = Clears your terminal. Nothing is deleted, just moved up a bunch to give you a clean screen. You can scroll up to see what you’ve “cleared.”
+
+– – – – – – – – –
+
+↑ = scroll backwards through past commands (more old)
+↓ = scroll forwards through past commands (more recent)
+
+⌃ + C = kill whatever is running
+⌃ + D = close current shell
+
+⌃ + A = go to beginning of line
+⌃ + E = go to end of line
+
+⌥ + ← = move the cursor one word backward
+⌥ + → = move the cursor one word forward
+
+– – – – – – – – –
+
+man = Manual – open manual on command to see what it does and some flags you can use
+Syntax:  man [command]
+
+man man would open the manual on the man command. It is comically notorious as being the worst way to let someone figure out how to use the command line.
+
+Hit ‘q’ to exit.
+
+– – – – – – – – –
+
+sudo = Superuser Do – run command with the security privileges of the super user
+Syntax:  sudo [command]
+
+Your computer keeps track of who has permission to read, write, and execute (rwx) each file and directory on your machine. If you want to see the permissions for everything in your current directory, run:
+
+	ls -l
+
+For more info on what the output means, see the 'ls' entry in the ‘Directories and Files’ section.
+
+– – – – – – – – –
+
+Bonus:
+This is a fun little command I showed Leo after showing him a little bash:
+
+open -a [application name] -g = open/run an application from the Command Line
+Syntax:  open -a [application name] -g
+
+When you click on an application icon, it runs a bash script that runs the code for it. If you wanted to go learn more about birds straight from terminal, you could type:
+
+$ open -a firefox -g https://www.birds.com/
+
+– – – – – – – – –
+
+
+
+
+## Navigating Directories
+Where you are file system, what's in your current directory, moving between directories
 – – – – – – – – –
 
 pwd = Print Working Directory – shows you where you are.
@@ -80,108 +164,185 @@ pwd = Print Working Directory – shows you where you are.
 
 – – – – – – – – –
 
-ls = Prints all contents of current directory if no arguments are given. You can pass in another directory as an argument and it will list the contents of that directory. Ex:
+ls = List – prints all contents of current directory if no arguments are given. You can pass in another directory as an argument and list its contents with  ls [directory]
+
+Syntax:  ls
+		 ls [some-folder]
 
     $ ls
-    objects.js    functions.js    freedom.txt    DOM.js    index.html    some-folder
-    $ ls some-folder
-    contents.txt     of.js    some.txt    folder.html
+    DOM.js   Objects.js   freedom.txt   functions.js   index.html  some-things
+    $ ls some-things
+    contents.txt   of.js   some.txt   things.html
 
-You can also list files of a specific type. Let’s say we only wanted to see what javascript (.js) files are in this directory. We can use the wildcard symbol (*) to list anything with .js at the end:
+Listing out the contents of a directory other than your current one will not change the directory you’re in.
 
-    $ ls
-    objects.js    functions.js    freedom.txt    DOM.js    index.html    some-folder
+You can also list files of a specific type. Let’s say we only wanted to see what javascript (.js) files are in this directory. We can use the wildcard symbol  * to list anything with .js at the end:
+    
+	$ ls
+    DOM.js   Objects.js   freedom.txt   functions.js   index.html   some-things
     $ ls *.js
-    objects.js     functions.js    DOM.js
+    DOM.js   Objects.js   functions.js
+
+You can also see hidden files (‘.’ files or dot files):
+
+    $ ls -a
+    .    ..    .DS_Store    .secret-key    banana.png    garden-tracker
+
+You can see the permissions of everything in your directory plus some other info:
+    
+    $ ls -a
+    -rw-r--r--  1 Tom  admin  150 Jun 18 23:02 README.md
+	drwxr-xr-x  6 Tom  admin  192 Jun 16 18:04 answer-keys
+
+There are 7 columns:
+
+	drwxr-xr-x  6 Tom  admin  192 Jun 16 18:04 answer-keys
+
+ 1) drwxr-xr-x
+	Permissions of the file/directory.
+
+ 2) 1
+	How many hard links there are to the file, or, if it’s a directory, how many hard links it contains (how many immediate files and subdirectories it contains) plus one for itself and its parent directory. 
+
+ 3) Tom
+	Who the Owner is.
+
+ 4) admin 
+	What group owns it, also known as the Group owner (a group of users who share the same permissions and user privilege. For example, a teacher on a school computer has different permissions than a student).
+
+ 5) 192
+	Number of bytes in the file/directory.
+
+ 6) Jun 16 18:04
+	Time/date when the file was last modified.
+
+ 7) answer-keys
+	Name of the file/directory.
+    
+The first column (in our example, drwxr-xr-x) is broken up as follows:
+
+         drwxr-xr-x
+
+    d     rwx    rwx    rwx
+    |      |      |      |
+  File/  Owner  Group  Others
+   Dir
+
 
 – – – – – – – – –
 
-cd = Change Directory – changes directory to passed in directory, changes to home folder if no arguments are given.
-Ex:
+cd = Change Directory – changes directory to passed in directory, changes to home directory if no arguments are given.
+
+Syntax:  cd
+		 cd [directory]
+
     $ pwd
     /Users/Leo/Documents/
 	$ ls
-	Projects    weight-tracker.txt    how-to-get-buff.pptx    bull-shark-test-online.html
+	Projects    how-to-get-buff.pptx    weight-tracker.txt    
 	$ cd Projects/
 	$ ls
-	bomb-java-project.java    snakety-snake.py    hssssssssssssss.py
+	bomb-java-project.java    hssssssssssssss.py    snakety-snake.py
 	$ pwd
     /Users/Leo/Documents/Projects/
     $ cd
     $ pwd
     /Users/Leo/
 
-Note that typing ‘cd’ is equivalent to typing ‘cd ~’
+Note that typing cd with no arguments is equivalent to typing cd ~
 
+– – – – – – – – –
+
+
+
+
+## Edit Files and Directories
+Make, rename and move files/directories
 – – – – – – – – –
 
 mkdir = Make Directory – type mkdir plus the desired new directory name
-Syntax:    mkdir [directory-name]
+Syntax:  mkdir [directory-name]
 
+    $ ls
+    something.txt    random-folder
+    $ mkdir new-folder
+    something.txt    random-folder    new-folder
 
-
-
-## Edit Files/Directories
-Rename and move files/directories
 – – – – – – – – –
+
+touch = make a new file. Type touch then the desired new file name.
+Syntax:  touch [filename]
+
+– – – – – – – – –
+
 mv = Move – move or rename a given file or directory
+
+Syntax:  mv [file] [directory]
+		 mv [old-file-name] [new-file-name] 
+
 Renaming:
+
     $ mkdir better-folder
     $ ls
-    badname.txt    meh-folder    better-folder    words.js
+    badname.txt    better-folder    meh-folder    words.js
     $ mv badname.txt goodname.txt
     $ ls
-    goodname.txt    meh-folder    better-folder    words.js
+    better-folder    goodname.txt    meh-folder   words.js
     $ mv meh-folder yay-folder
     $ ls
-    goodname.txt    yay-folder    better-folder    words.js
+    better-folder    goodname.txt    words.js    yay-folder
 
 Moving:
-$ mv words.js better-folder
+
+	$ mv words.js better-folder
     $ ls
-    goodname.txt    yay-folder    better-folder
+    better-folder    goodname.txt    yay-folder
     $ ls better-folder
     words.js
 
+
+## Remove Files and Directories
+Delete files/directories
 – – – – – – – – –
 
-rmdir = remove directory
+rmdir = remove directory – this removes a directory only if it is empty
+
+Syntax:  rmdir [directory]
 
     $ ls
     directory-1    directory-2    directory-3
-    $mkdir new-directory
-    $ls
-    directory-1    directory-2    directory-3    new-directory
+    $ rmdir directory-1
+    $ ls
+    directory-2    directory-3    new-directory
 
 rm = Remove – remove files, either one at a time or multiple files separated by spaces
 
-    $ ls
-    stupid-file.txt    webdev4lyfe.html    code-sucks.js    hello-world.js
+Syntax:  rm [file1] [file2] [file3]
+
+—————————————————————————————————————————————————————————————————————————
+** Be VERY careful when using rm. The things it removes are gone forever.
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––——————————————
+
+	$ ls
+    code-sucks.js    hello-world.js    stupid-file.txt    webdev4lyfe.html
     $ rm stupid-file.txt
     $ ls
-    webdev4lyfe.html    code-sucks.js    hello-world.js
+	code-sucks.js    hello-world.js    webdev4lyfe.html
     $ rm code-sucks.js hello-world.js
     $ ls
     webdev4lyfe.html
 
 You can also use the -R flag to recursively remove a directory and all of its contents:
-    $ ls
+    
+Syntax:  rm -R [directory]
+
+	$ ls
     trees.js        useless-stuff
     $ ls useless-stuff
-    useless.txt    get-rid-of-me.jpeg    potatoManDan.png
+    file.txt        get-rid-of-me.jpeg        potatoManDan.png
     $ rm -R useless-stuff
     $ ls
-    trees.js
-
-
-
-
-         drwxrwxrwx
-
-  File/
-   Dir  Owner Group Others
-    |     |     |     |
-    d    rwx   rwx   rwx
+	trees.js
 
 
 
