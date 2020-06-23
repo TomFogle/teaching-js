@@ -28,15 +28,160 @@ https://www.youtube.com/watch?v=5RTSlby-l9w
 ## Symbols/Conventions
 Command Line and instructional symbols/conventions
 – – – – – – – – –
+
 Terminal (Mac) / Command Prompt (Windows) = Program for command line
 Shell = Terminal / Command Prompt window
 Directory = Folder
+Flag = A single hyphen modifier such as -r or a double hyphen modifier such as --version
+
+– – – – – – – – –
 
 [brackets] = Insert appropriate file/directory/etc. name here
 For example,
 
-mv [file] [newfile]
+	mv [file] [directory]
 
-means type a file name in place of [file] and a directory instead of [newfile]. E.g.
+means type a file name in place of [file] and a directory instead of [directory]. For example,
 
-mv recipes.txt recipe-folder
+	mv recipes.txt recipe-folder
+
+
+** Note:
+	– Every command, flag, and argument MUST be separated by a space.
+	– Always use TAB to autocomplete – great way to avoid spelling errors.
+	– All commands (not necessarily flags or arguments) are strictly lowercase.
+	– You cannot type a bunch then stop and run a different command without deleting the rest first. For example,
+    	mv somefile somewheOoopsNvm clear
+	will not clear your screen. The computer will not know to ignore the first chunk of text.
+	
+
+
+
+– – – – – – – – –
+
+/ = root directory, the topmost level of the system drive
+~ = home directory, under the root directory, looks like /Users/<short username>
+. = current directory
+.. = previous directory
+> = overwrite file
+>> = append to file
+
+
+
+
+## Directories
+Making and moving around directories
+– – – – – – – – –
+
+pwd = Print Working Directory – shows you where you are.
+
+	$ pwd
+	/Users/Tom/Desktop/
+
+– – – – – – – – –
+
+ls = Prints all contents of current directory if no arguments are given. You can pass in another directory as an argument and it will list the contents of that directory. Ex:
+
+    $ ls
+    objects.js    functions.js    freedom.txt    DOM.js    index.html    some-folder
+    $ ls some-folder
+    contents.txt     of.js    some.txt    folder.html
+
+You can also list files of a specific type. Let’s say we only wanted to see what javascript (.js) files are in this directory. We can use the wildcard symbol (*) to list anything with .js at the end:
+
+    $ ls
+    objects.js    functions.js    freedom.txt    DOM.js    index.html    some-folder
+    $ ls *.js
+    objects.js     functions.js    DOM.js
+
+– – – – – – – – –
+
+cd = Change Directory – changes directory to passed in directory, changes to home folder if no arguments are given.
+Ex:
+    $ pwd
+    /Users/Leo/Documents/
+	$ ls
+	Projects    weight-tracker.txt    how-to-get-buff.pptx    bull-shark-test-online.html
+	$ cd Projects/
+	$ ls
+	bomb-java-project.java    snakety-snake.py    hssssssssssssss.py
+	$ pwd
+    /Users/Leo/Documents/Projects/
+    $ cd
+    $ pwd
+    /Users/Leo/
+
+Note that typing ‘cd’ is equivalent to typing ‘cd ~’
+
+– – – – – – – – –
+
+mkdir = Make Directory – type mkdir plus the desired new directory name
+Syntax:    mkdir [directory-name]
+
+
+
+
+## Edit Files/Directories
+Rename and move files/directories
+– – – – – – – – –
+mv = Move – move or rename a given file or directory
+Renaming:
+    $ mkdir better-folder
+    $ ls
+    badname.txt    meh-folder    better-folder    words.js
+    $ mv badname.txt goodname.txt
+    $ ls
+    goodname.txt    meh-folder    better-folder    words.js
+    $ mv meh-folder yay-folder
+    $ ls
+    goodname.txt    yay-folder    better-folder    words.js
+
+Moving:
+$ mv words.js better-folder
+    $ ls
+    goodname.txt    yay-folder    better-folder
+    $ ls better-folder
+    words.js
+
+– – – – – – – – –
+
+rmdir = remove directory
+
+    $ ls
+    directory-1    directory-2    directory-3
+    $mkdir new-directory
+    $ls
+    directory-1    directory-2    directory-3    new-directory
+
+rm = Remove – remove files, either one at a time or multiple files separated by spaces
+
+    $ ls
+    stupid-file.txt    webdev4lyfe.html    code-sucks.js    hello-world.js
+    $ rm stupid-file.txt
+    $ ls
+    webdev4lyfe.html    code-sucks.js    hello-world.js
+    $ rm code-sucks.js hello-world.js
+    $ ls
+    webdev4lyfe.html
+
+You can also use the -R flag to recursively remove a directory and all of its contents:
+    $ ls
+    trees.js        useless-stuff
+    $ ls useless-stuff
+    useless.txt    get-rid-of-me.jpeg    potatoManDan.png
+    $ rm -R useless-stuff
+    $ ls
+    trees.js
+
+
+
+
+         drwxrwxrwx
+
+  File/
+   Dir  Owner Group Others
+    |     |     |     |
+    d    rwx   rwx   rwx
+
+
+
