@@ -258,8 +258,15 @@ Note that typing cd with no arguments is equivalent to typing cd ~
 
 – – – – – – – – –
 
-Find/open a specific directory or file
-find = 
+find = list every directory and file recursively
+find [directory] = list every directory and file recursively starting from [directory]
+
+find . -type f = list every file recursively starting from current directory
+find . -type d = list every directory recursively starting from current directory
+
+find . -name “*.js” = list every file/directory recursively that ends with “.js”
+find . -name “*for*” = list every file/directory recursively that had the word “for” in it
+
 
 – – – – – – – – –
 
