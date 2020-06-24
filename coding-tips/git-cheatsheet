@@ -1,14 +1,20 @@
 Welcome!
-This is a cheat-sheet for Github and Command Line integration.
-If you’re looking for general keyboard and Sublime shortcuts, click here.
-If you’re looking for general Command Line shortcuts, click here. 
-To navigate to a specific section, click this symbol, located towards the top-left of your screen:
-    
-Then, click the name of the section you’re looking for. 
 
-## Making a Code Repository
-In Github and Command Line
+This is a cheat-sheet for Github and Command Line integration.
+
+If you’re looking for general keyboard and Sublime shortcuts, see our keyboard-shortcut-cheatsheet.
+If you’re looking for general Command Line shortcuts, see our command-line-cheatsheet.
+
 – – – – – – – – –
+
+
+
+
+## Make a Code Repository
+In Github and Command Line
+
+– – – – – – – – –
+
 To start a new repo, got to Github:
 
 Profile Page > Repositories > New > Fill out info > Create repository
@@ -16,30 +22,79 @@ Profile Page > Repositories > New > Fill out info > Create repository
 
 To clone a repo (makes local copy, sets up the stream between your machine and Github):
     
-Click on the repo
-Click clone
-Copy the URL
+ 1) Click on the repo
+ 2) Click clone
+ 3) Copy the URL
 
-In Command Line, navigate to the directory where you want your repo to be cloned
+ 4) In Command Line, navigate to the directory where you want your repo to be cloned
+
     cd into/the/directory/you/want
 
-Clone the repo from your account using its URL
+ 5) Clone the repo from your account using its URL
+
     git clone [url]
-
-
 
 – – – – – – – – –
 
-git pull =
-git add =
-git commit =
-git push =
-git status =
-git clone =
-git branch =
-git checkout =
 
 
-Let’s make a step-by-step guide to making a repository, cloning it, then making changes in command line, then pushing to the website, with the assumption that the reader has previously followed along with us while we did it, aka more of a cheat-sheet than a full guide.
+
+## Commit Code
+Add, commit, and stage your code locally and save on Github
+– – – – – – – – –
+
+git add [file/dir] [file/dir] ... = stage (add) files/directories to be committed
+git add . = stage all insertions under current directory
+git add -u . = stage all deletions under current directory
+git add -A =  stage all changes (insertions/deletions) across entire project
+
+git status = see changes to be committed and untracked files 
+git commit = commit changes to your machine (not to Github itself) 
+git commit -m “i did xyz” = commit with a short message for reference (recommended)
+git push = push changes to Github (commit on Github)
+
+git pull = pull latest version from branch upstream (master by default)
+
+
+
+
+## Branches
+Manage and switch between branches
+
+– – – – – – – – –
+git branch = list all branches in your local repository
+git branch -a = list all branches in your remote repository (on Github in our case)
+
+git branch [branch-name] = create a new branch named [branch-name]
+git branch -m [new-branch-name] = rename current branch
+
+git branch -d [branch-name] = safely delete current branch (will only delete if merged)
+git branch -D [branch-name] = force delete current branch (delete whether merged or not)
+
+git checkout [branch-name] = switch to existing branch called [branch-name] 
+
+
+
+
+## Undoing Changes
+Undoing current changes, reverting, cleaning up
+– – – – – – – – –
+
+git log = see your list of commits, ID #s and attached messages
+
+git reset [file/dir] [file/dir] … = remove file/dir from staging area
+
+For more on reset, check out this article:
+https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
+
+
+git clean -f = force deletes all untracked files, similar to rm – be sure you want to do this
+git clean -i = will ask if you want to clean, has option to ask for each file/directory
+git clean -n = dry run of clean – will show you what would be cleaned without cleaning
+git clean -df = add the -d flag to the f/i/n flags to also clean directories
+
+git revert HEAD = revert last commit
+git revert [commit-id] = revert commit with id [commit-id]
+
 
 
