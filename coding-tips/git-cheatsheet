@@ -1,0 +1,45 @@
+Welcome!
+This is a cheat-sheet for Github and Command Line integration.
+If you’re looking for general keyboard and Sublime shortcuts, click here.
+If you’re looking for general Command Line shortcuts, click here. 
+To navigate to a specific section, click this symbol, located towards the top-left of your screen:
+    
+Then, click the name of the section you’re looking for. 
+
+## Making a Code Repository
+In Github and Command Line
+– – – – – – – – –
+To start a new repo, got to Github:
+
+Profile Page > Repositories > New > Fill out info > Create repository
+
+
+To clone a repo (makes local copy, sets up the stream between your machine and Github):
+    
+Click on the repo
+Click clone
+Copy the URL
+
+In Command Line, navigate to the directory where you want your repo to be cloned
+    cd into/the/directory/you/want
+
+Clone the repo from your account using its URL
+    git clone [url]
+
+
+
+– – – – – – – – –
+
+git pull =
+git add =
+git commit =
+git push =
+git status =
+git clone =
+git branch =
+git checkout =
+
+
+Let’s make a step-by-step guide to making a repository, cloning it, then making changes in command line, then pushing to the website, with the assumption that the reader has previously followed along with us while we did it, aka more of a cheat-sheet than a full guide.
+
+

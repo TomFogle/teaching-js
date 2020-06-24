@@ -18,7 +18,7 @@ All this being said, Command Line is a fun and useful tool! We just want to make
 
 Note to Windows 10 users (if you don’t have Windows 10, you should consider upgrading): 
 
-Download the Windows Subsystem for Linux extension for your command prompt or you’ll have a much harder time. Follow the tutorial here:
+Download the Windows Subsystem for Linux instead of Command Prompt or you’ll have a much harder time. Follow the tutorial here:
 
 https://www.youtube.com/watch?v=5RTSlby-l9w
 
@@ -229,6 +229,11 @@ The first column (in our example, drwxr-xr-x) is broken up as follows:
    Dir
 
 
+Our example is a directory (d). Other options include (-) for a file and, rarely, (l) for a link. 
+– The Owner can (r)ead, (w)rite, and e(x)ecute the file. Note that “write” means “edit”. 
+– The Group can read and execute the file, but not write to it (symbolized by the - in place of w).
+– Everyone else (the other users) can also read and execute, but not write (-).
+
 – – – – – – – – –
 
 cd = Change Directory – changes directory to passed in directory, changes to home directory if no arguments are given.
@@ -250,6 +255,15 @@ Syntax:  cd
     /Users/Leo/
 
 Note that typing cd with no arguments is equivalent to typing cd ~
+
+– – – – – – – – –
+
+Find/open a specific directory or file
+find = 
+
+– – – – – – – – –
+
+grep = (Link to regex guide and lessons pending)
 
 – – – – – – – – –
 
@@ -301,6 +315,8 @@ Moving:
     words.js
 
 
+
+
 ## Remove Files and Directories
 Delete files/directories
 – – – – – – – – –
@@ -343,6 +359,44 @@ Syntax:  rm -R [directory]
     $ rm -R useless-stuff
     $ ls
 	trees.js
+
+
+
+
+## Sublime and Nano
+Opening and using Nano/Sublime
+– – – – – – – – –
+
+nano = nano text editor – open file in the barebones nano text editor. When you are done:
+
+Syntax:  nano textfile.txt
+
+⌃X = exit document
+y/n = ‘y’ to save, ‘n’ to not save
+↵ = confirm save/not save 
+
+– – – – – – – – –
+
+subl = open a file with Sublime
+Syntax: subl filename.txt
+
+Unfortunately, this command is not preinstalled. To install it, make sure Sublime is in your Applications folder (it should have prompted you to do so when you downloaded it), and copy/paste this line of code into your terminal/Command Line, then hit ↵:
+
+Mac/Linux:
+cd ~
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+For Mac, after entering the command type your user password when prompted, then press ↵. There will be no indication that anything is being typed, but it is registering your keystrokes; just type carefully. If you know you screwed up the password, press delete until you clear everything, then try again.
+
+
+Windows:
+Follow this tutorial
+
+	https://microcollaborative.atlassian.net/wiki/spaces/DSC/pages/147521540/Creating+aliases+in+Windows+Subsystem+for+Linux
+
+and enter the following line into you .bash_aliases file:
+
+	alias subl='"/mnt/c/Program Files/Sublime Text 3/subl.exe"'
 
 
 
