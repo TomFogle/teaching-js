@@ -1,0 +1,215 @@
+Reminder to both of us: we’re the only ones who will see this document for now. So, we don’t need to worry too much about our wording choices as long as we both understand ourselves. 
+
+Reminder 2: We’re going to draw stuff!! Don’t worry if every description makes sense as written. As long as we can understand ourselves, we can teach it. 
+
+Lesson 1: Setup and Mindset
+Guided download of Firefox, Sublime, iTerm/Linux terminal, anything else we can think of for a good coding environment. 
+
+Give my lil spiel about how coding is a skill anyone can learn (equating it to learning taxes, raising kids, etc.; “impossible”/seemingly difficult tasks that people still manage to learn). You’re learning how to harness computing power to complete tasks and build things; you don’t need to be some tech wizard with a math phD. Emphasize how computer science is a bunch of simple tools that combine to do some wild shit. 
+
+Describe the lesson format we’re going to use: something like: 
+lesson, why is this important,  guided exercises, solo exercises, solo solution explanation, recap of lesson w/notes.
+
+We organize all lessons as building up to a sicc project. Personal website, for instance?
+Lesson 2: Getting comfortable with your computer
+Before we get into the 1’s and 0’s of computer science, we need to understand the 1’s and 0’s. We like to count things in decimal, otherwise known as base 10. Computers count things in binary. At their core, they’re a massive mechanism that uses switches, they can be turned on, or they can be turned off. There are only 2 states a switch can be in, not 10, so we have to learn how to count like a computer.
+
+To make this easier, let’s do a quick recap of how we count in decimal. This might seem pretty basic – hopefully you’ll think some of it’s cool – but it is important to think of numbers in the way I’m about to describe.
+
+Decimal is called ‘base 10’ because we have 10 symbols that we can use for counting. We start at 0, then count one symbol at a time: 1, 2, 3, 4, 5, 6, 7, 8, 9. We call these ‘ones’ or ‘1s’.
+
+That’s ten symbols. Instead of having symbols for every conceivable number (which would be beyond ridiculous), we simply count how many times we’ve cycled through these symbols. If we’re at 9 and want to count one more we seem to be stuck – what do we write? Well, we’ve gone through all ten symbols 0-9, so we can simply start over from 0 and keep track of the fact that we’ve gone through all our symbols once by putting a ‘1’ to the left of the 0:
+
+    1 0
+
+We now have two numbers on the page. Let’s call the rightmost number, the place where we’re counting by 1s, the “ones place” or “1’s place”.
+
+We then can start counting again: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19.
+If we want to count one more, we’ve run out of symbols again. So, counting how many times we’ve gone through our ten symbols, we have now gone through them twice, so we add 1 to the number of times we’ve gone through the symbols, restart our count and write:
+
+    2 0
+
+Each time the number to the left of the place where we count by ‘1s’ goes up, it means that we’ve gone through all ten symbols. So each time the left number goes up, we’ve counted ten ones. The ‘2’ represents us having counted the ten symbols in the 1’s place ‘2’ times. We’ll call this place in our number the “tens place” or “10's place”.
+
+This counting continues: 20, 21, …,  29, 30, and so on until we reach 99:
+
+    … 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99.
+
+If we want to add 1 more – well, we’ve gone through our symbols again, so we restart and add 1 to the number of times we’ve gone through them:
+
+    9 0
++    1
+
+But we’ve run out of symbols for counting how many times we’ve gone through our symbols. More simply put, we’ve run out of symbols for the 10’s place, which counts how many times we’ve gone through the 1’s place. To keep track of how many times we’ve gone through the 10’s place, we’ll follow what we did before and write a ‘1’ to the left of the 10’s place, and restart our count in the 10’s place:
+
+1 0 0
+
+We’ll call this the ‘hundreds place’ or ‘100s place’.
+
+This continues indefinitely. The next place would be the “thousands (1,000’s) place” the “ten-thousands (10,000’s) place”, etc. The numbers in each place are called ‘digits’. Each place keeps track of the number of times the digit to its right has cycled through all ten symbols (0-9).
+
+We could write 1 as 0001, and 2 as 0002. If we get to 0009 and count 1 more, we would write 0010. If we get to 0099 and count 1 more, we would write 0100. It may see seem kind of silly to say, but this is going to be similar to how binary is written.
+
+The key takeaway from this way of thinking is:
+we have a certain number of symbols to count with
+when we run out of symbols for a digit and try to count 1 more, we start over and increase the digit to its left by 1 to keep track of the fact that we’ve cycled through all the symbols for that digit.
+
+Let’s say we didn’t have the symbols 8 or 9. Then we would only have the symbols 0-7. We would then count like this:
+
+    0, 1, 2, 3, 4, 5, 6, 7,
+10, 11, 12, 13, 14, 15, 16, 17,
+20, 21, 22, 23, 24, 25, 26, 27,
+30, 31, 32, 33, 34, 35, 36, 37,
+…
+
+In this case ‘10’ really only keeps track of 8 things. But in this number system, we only have 8 symbols, 0-7, so we can’t write 8. Therefore we have to write ‘10’ to represent what we would normally write in decimal as ‘8’.
+
+The set of symbols we have at our disposal to use for counting is called a ‘base’. Hence, the symbols 0-9 is ‘base 10’ or ‘decimal’, because there are ten symbols. In the system without the symbols ‘8’ or ‘9’, we only have 8 symbols to count with (0-7). This system is called ‘base 8’ or ‘octal’.
+
+Alas, no one really uses octal. It is, however, useful to know for comprehending what we’ll cover next, ‘base 2’ or ‘binary’.
+
+Yup, base 2. Two symbols. 0 and 1. Not the most efficient system in the world for humans. For computers it’s a perfect match.
+
+// Cover binary
+
+
+What are computers and how do they work? – demystifying computer science.
+Computers store information on a bunch of switches that can be flipped one way to mean “on” and the other way to mean “off”. Let’s say they’re organized in a straight line.
+
+If you wanted to know if the 100th switch was on, it would go and check by sending an electrical pulse through it. If it comes out the other side, it is on, otherwise it’s off. We say ‘1’ means on and ‘0’ means off. We call this switch that is a 1 or 0 a ‘bit’.
+
+This storage of 1’s and 0’s is called memory. It’s storing information, albeit very basic information. However, we can use this basic setup to accomplish a lot of things. The first bit will be called ‘bit 0’, the second ‘bit 1’, the third ‘bit 2’, etc.
+
+Computers have names for these bits. Rather, for sections of these bits. They could have named every single bit and left it at that, but the better way to organize memory that everyone settled on is to group the bits into sections of 8, and have names for those sections. A group of 8 ‘bits’ is called a ‘byte’. Similar to before, the first byte in memory is ‘byte 0’, the second ‘byte 1’, and so on.
+
+If you wanted to know if bit 54 is on or off (remember, this is the 55th bit), you would skip the first 6 bytes, bytes 0-5 (skip 48 bits, a.k.a bits 0-47), look at byte 6 (bits 48-55) and look at bit 6 (the 7th bit) in that byte. Skipping by groups of 8 bits and looking inside one of the groups later is a lot faster than going through one bit at a time. Hence, we have names for each ‘byte’, and inside each byte we name the 8 ‘bits’ 0-7.
+
+The names for these bytes are simply hexadecimal numbers. Remember that hexadecimal has 16 number symbols, 0123456789abcdef. ‘10’ in hex is equivalent 
+
+
+
+
+Emphasize how computer science is a bunch of simple tools that combine to do some wild shit.
+Emphasize the importance of specificity and being anal (compare it to checking grammar in an important email)
+Talk about tech elitism and deliberate use of language to increase barrier-to-entry. Anyone can learn to code. Just learn the lingo and practice a decent amount. It’s a job like any other. 
+These concepts are fairly simple to grasp, but the real trick is reproducing them on demand/combining them. 
+Don’t be afraid to google stuff. Real coders do it constantly. 
+Lesson 3: Javascript basics, why javascript?
+Lesson w/explanation of why is this important to larger project
+guided exercise to build something more complex/hint at future lessons
+solo exercises that build simple but actually useful things. Unit converter, etc. 
+solo solution explanation
+recap of lesson w/notes
+additional optional practice
+
+Javascript basics, why javascript, explain how all computing logic is similar so if you learn this one annoying language, the rest will be more straightforward.
+
+We define things explicitly and precisely; they are no more and no less than what we say they are (barring very low-level irrelevant jargon). These tools are very simple and nothing more, but they can be used in convenient ways to accomplish various tasks.
+
+A hammer and nails are basic tools, but you can combine them to build almost anything. 
+A backpack is often used to carry stuff you’ll need at school – computers, food, textbooks, etc. You could carry a compass, 4 meals, 4 changes of clothes, and attach a sleeping bag for hiking.
+You could also fill a backpack with bricks and do weighted pullups with it. 
+You could even use other tools to cut an old backpack into pieces and make a costume.
+With imagination and creativity, this simple tool can be used to do a wide variety of things beyond their most common uses. It’s just a sealed fabric with pockets and straps, but that’s enough to accomplish many things.
+
+If the way you want to use something is possible and accomplishes your task, it’s fair game.
+
+Variables: spots in memory that you name and set to equal to chosen values
+let num = 5;
+
+
+What does this do?. 
+num indicates there’s a designated spot in memory for whatever I want to put in it. The = means that I want to store whatever is on the right of the = inside of my variable (num in this case). The value on the right of the = that I want to store in num is 5. The ‘;’ means I’m done with my line of code. The reason why we use semicolons is because in javascript, the computer doesn’t care if your code is on multiple lines or on one ridiculously long, disgusting, illegible line. The newlines and organization is purely for human legibility. This is not necessarily true for all languages – some have stricter rules. Python, for example, will not run if you don’t have newlines or if your tabs aren’t lined up properly. Javascript couldn’t care less; it cares about other things like having parentheses (), brackets [], and curly braces {} match properly.
+
+I want to name that part of memory something a little easier on the eyes than 0x001C5, which is what a computer’s name for a spot in memory looks like. Here I chose num. The computer will choose a spot in memory to store my variable, let’s say 0xC4A95, and remember for me that num means 0xC4A95 and will go to that spot in memory to look at what 
+
+For the most part, every variable and thing you make and want to use in your code needs to be “birthed” at some point. Imagine I told you “the number equals 5” without ever telling you that I’m thinking of a new number. You’d probably try to think back and think of what number I could possibly be referring to. Then imagine that instead I told you “I’m thinking of a number and it’s 5.” It’s kind of a silly thing to say in human conversation, but there is no ambiguity – avoiding ambiguity is key in coding.
+---------
+let myName = Leo;
+
+Let’s say there’s a small section of computer memory the computer calls 0x001C5. Now that we’ve declared this variable, “Leo” is stored inside the section of memory called 0x001C5 and we can use “num” as slang for 0x001C5. It’s like someone named Robert Hubert Huffington Downey Smith III deciding to go by Rob to make everyone’s life easier.   
+
+Every time we use myName, the computer knows to go into the memory section 0x001C5 and pull out whatever’s stored there; in this case, the word “Leo”. 
+
+let myName = Leo is basically saying let 0x001C5 = myName = Leo
+
+
+I can change this variable anytime I want to. Maybe I want myName to equal Tom. 
+
+let myName = Tom;
+
+Now, whenever the computer sees myName, it still goes into section 0x001C5, only this time, it finds “Tom” instead of “Leo”. 
+
+Ints: integers
+Computers are really, really good at doing things with numbers. So, we need to be able to input numbers. 
+
+Floats: numbers with decimals
+Sometimes numbers have decimals.
+
+Strings: stuff in quotes, usually words
+Computers are really good at organizing items in general. Sometimes those items are words. For example, “Leo” and “Tom.”  
+
+Operators:
+The 4 basics, plus modulo, and, or
+If/Else if/Else:
+Make the computer do different things under different circumstances. For example, if my name is Leo, say “hi leo”, but if my name is Tom, I want the computer to say “hi tom” and if my name isn’t Leo or Tom, I want the computer to say “Nice to meet you!”
+Arrays: ordered lists of ints, strings, objects, etc. 
+We’ll talk about objects later; they’re cool.
+Remember how computers are really good at organizing items in general? Arrays let you make ordered lists that can combine integers, floats, strings, and objects (which we’ll cover soon). For example, someone’s name, address, age, and favorite version of pi could make an array. 
+
+myInfo = [“Leo”, “123 Main Street”, 23, 3.14159];
+
+Array vs Set – think of a person’s case of weekly meds, they’re in order, versus a basket full of names on papers. The first is an ordered list of pills, the second is a big set of loose slips of paper with no order to them.
+While loops: 
+While a condition is true/false, code runs. If/when the condition changes, code stops. 
+
+While my name is Leo, print out Leo’s info. Otherwise, print “hey, where’s Leo?”
+For loops: 
+glorified counting machines that (usually) run a given process n number of times
+
+I want to print the word poop five times. I want to print every even number in this list. 
+
+Functions: reusable chunks of code
+condenses lots of code into a single thing that can be run again and again
+
+Objects: 
+Things with given properties. Compare to cookies. All cookies have a shape and type. Aka round chocolate chip, sugar cookies shaped like Christmas trees, etc.  
+
+Classes: 
+Most common analogy is a cookie cutter and cookies. Tools that build objects. A cookie cutter makes it possible to assign cookies a shape.
+
+A dog is an object that breathes, eats, and barks. A human is an object that breathes, eats, and talks.
+
+
+Why is all this stuff important? How will it fit together eventually?
+
+Checkpoint: Give them the trees or apartments problem.
+If you can’t do this, do some review and come back to it. WE EXPECT THIS TO TAKE A FEW TRIES, SO NO RUSH!! It took me a few tries to understand these concepts the first time I learned! Show them how to outline their thinking in pseudo-code (sudocode?). 
+Command Line Basics, why command line?- 
+How to use command line, why it’s useful/why we’re teaching this
+
+Lesson w/explanation of why is this important to larger project, 
+guided exercises, 
+solo exercises, 
+solo solution explanation, 
+recap of lesson w/notes,
+additional optional practice
+
+HTML/CSS/Bootstrap Basics - Make it pretty!
+
+So, we’ve just done cool stuff in our developer console. How can we show other people? Teach them how to “animate” their code. 
+
+HTML: Raw website content. All the words, image links, everything
+
+CSS: Make it look presentable and easy for user to follow. 
+
+JS: Make it functional. 
+
+This lesson itself is a metaphor for frontend: html is like the raw written lesson plan and boring recitation, css is like the neat, cool video format in which we present it, JS is the 
+
+
+
+Progress Check: 
+If you can’t do this, do some review and come back to it. WE EXPECT THIS TO TAKE A FEW TRIES, SO NO RUSH!! It took me a few tries to understand these concepts the first time I learned!
+
+Have them copy a simple frontend site we design, with buttons and other js stuff that perform different functions. We give them a basic black/white template and layout, then let them choose their own colors/images and such. 
