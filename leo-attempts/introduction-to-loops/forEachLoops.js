@@ -13,9 +13,9 @@ function isTheSame(numbers){
 ////////
 }
 
-let arrpenis = [2,5,3,1,8,4];
-let arrfag = [5,5,5,5,5,5,5];
-let arrbutthole = [5,5,5,5,5,7,5,5,5];
-isTheSame(arrfag);
-isTheSame(arrbutthole);
+let arrBloop = [2,5,3,1,8,4];
+let arrBeans = [5,5,5,5,5,5,5];
+let arrBooty = [5,5,5,5,5,7,5,5,5];
+isTheSame(arrBeans);
+isTheSame(arrBooty);
 
