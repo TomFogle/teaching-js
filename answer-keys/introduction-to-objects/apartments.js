@@ -1,11 +1,12 @@
 /*
 Make 2 classes:
-first class is Apartment
-second class is Building
+First class is Apartment
+Second class is Building
 
-**Building has apartments, every apartment has its own array w outlets.** 
+**Building has apartments, every apartment has its own array with outlets.** 
 
-The apartment class should have an array of outlets, called "outlets". The array should have 6 strings called "off".
+The apartment class should have an array of outlets, called "outlets".
+The array should have 6 strings called "off".
 
 The building class should have an array of apartment objects. Should be empty to start.
 
@@ -15,15 +16,55 @@ Make one building object.
 
 In the code underneath both classes, you will populate the Building object's apartments array by pushing new apartment objects. 
 
-Make a function in the Building class that takes in 2 integers, the first one being the index of the Apartments array, 
-the second one being the index of the corresponding apartment's outlets array. Edit that value to "on" and print the new array.
+Make a function in the Building class that takes in 2 integers,
+the first one being the index of the Apartments array, 
+the second one being the index of the corresponding apartment's outlets array.
+Edit that value to "on" and print the new array.
 */
 
-class Building {
-	apartmentsArray = [];
-	constructor(){}
+
+class Integer {
+	integer;
+	constructor() {}
+
+	setInt(num) {
+		this.integer = num;
+	}
+	parseInt(someString) {
+		let ascii, intToReturn = 0;
+		let zero = "0".charCodeAt(0);
+		for (let i = 0; i < someString.length; i++) {
+			ascii = someString.charCodeAt(i);
+
+			if (ascii - zero >= 0 && ascii - zero < 10) {
+				intToReturn += ascii - zero;
+				intToReturn *= 10;
+			}
+			else {
+				throw "String cannot be parsed into an Integer."
+				return;
+			}
+		}
+		this.integer = intToReturn/10;
+	}
 }
-/////////////////
+
+myInt = new Integer();
+myInt.setInt(12);
+console.log("myInt: " + myInt.integer);
+myInt.parseInt("256");
+console.log("myInt: " + myInt.integer);
+myInt.parseInt("267h4");
+console.log("myInt: " + myInt.integer);
+
+
+/*********/
+/** ans **/
+/*********/
+
+// Make Apartments class first. In this case, it wouldn't break
+// the code to do so the other way around, but
+// 
 class Apartment {
 	outlets = [];
 	constructor(numOutlets){
@@ -32,7 +73,11 @@ class Apartment {
 		}
 	}
 }
-////////////////
+
+class Building {
+	apartmentsArray = [];
+	constructor(){}
+}
 
 myBuilding = new Building();
 
