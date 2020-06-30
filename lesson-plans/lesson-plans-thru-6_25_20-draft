@@ -92,7 +92,7 @@ Tom’s journey:
 At my elite university, the teaching sucked. Period. Save a couple professors, the courses were hard to follow, not comprehensive, and stressful due to their learn-the-whole-course-on-your-own nature. Some professors’ teaching was confusing, some said the wrong words at points where precision was critical, some couldn’t get into the minds of their students and help them navigate through the pitfalls of understanding the subject, and many of them didn’t care about teaching the class in the first place – they simply did so because they were forced to order to do their research. 
 
 
-I went to Tom at my lowest point: one of the most popular Udemy bootcamps and two video series with hundreds of thousands of subscribers had failed to present for-loops in a way that made sense. 
+I went to Tom at my lowest point: one of the most popular Udemy bootcamps and two video series with hundreds of thousands of subscribers had failed to present for-loops in a way that made sense. I sat down with him for 30 mins and by the end of that time, I had learned it. 
 
 
 This is a program designed from the ground up for people who… 
@@ -127,16 +127,55 @@ Reminder to both of us: we’re the only ones who will see this document for now
 Reminder 2: We’re going to draw stuff!! Don’t worry if every description makes sense as written. As long as we can understand ourselves, we can teach it. 
 
 Video notes: Sound is far, far more important than camera quality, especially since we’re doing a lot of screen-sharing/slides as opposed to videos of ourselves. We only really need videos of ourselves to a) introduce ourselves and b) introduce each new section. 
+
+
 Lesson 1: Setup and Mindset
-Guided download of Firefox, Sublime, iTerm/Linux terminal, anything else we can think of for a good coding environment. 
+Video 1: Welcome and introduction.
 
 Give my lil spiel about how coding is a skill anyone can learn (equating it to learning taxes, raising kids, etc.; “impossible”/seemingly difficult tasks that people still manage to learn). You’re learning how to harness computing power to complete tasks and build things; you don’t need to be some tech wizard with a math phD. Emphasize how computer science is a bunch of simple tools that combine to do some wild shit. 
 
-Describe the lesson format we’re going to use: something like: 
-lesson, why is this important,  guided exercises, solo exercises, solo solution explanation, recap of lesson w/notes.
-
+Emphasize how computer science is a bunch of simple tools that combine to do some wild shit.
+Emphasize the importance of specificity and being anal (compare it to checking grammar in an important email)
+Talk about tech elitism and deliberate use of language to increase barrier-to-entry. Anyone can learn to code. Just learn the lingo and practice a decent amount. It’s a job like any other. 
+These concepts are fairly simple to grasp, but the real trick is reproducing them on demand/combining them. 
+Don’t be afraid to google stuff. Real coders do it constantly. StackOverflow, stack exchange, MDN, Medium
 We organize all lessons as building up to a sicc project. Personal website, for instance?
+
+
+
+Video 2:
+
+Lesson Format:
+ why is this important, 
+lesson with mini quizzes as they go, 
+guided exercises, 
+solo exercises, 
+Guided walkthrough of solo exercises, 
+Common screw up section, 
+recap of lesson as last slide plus attached text file.
+
+Guided download of Firefox, Sublime, iTerm/Linux terminal, anything else we can think of for a good coding environment, plus example PDF.
+
+Have them run lil stuff for fun. 
+
+HTML/CSS/Bootstrap Basics - Make it pretty!
+
+So, we’ve just done cool stuff in our developer console. How can we show other people? Teach them how to “animate” their code. 
+
+HTML: Raw website content. All the words, image links, everything. Show them all the basic heading and button options. 
+
+CSS: Make it look presentable and easy for user to follow. Show them all the basic styling options. Color, size, font, margins, padding. 
+
+JS: Make it functional. 
+
+This lesson itself is a metaphor for frontend: html is like the raw written lesson plan and boring recitation, css is like the neat, cool video format in which we present it, JS is the 
+
+
+
+Video 3:
 Lesson 2: Binary: why should we care?
+why is this important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+
 Why do we give a shit? Binary is important. We need to understand binary to understand concept x, y z. It is also featured in some job interviews. Taking 5 minutes to understand this concept will save us a lot of time and energy down the line
 
 Before we get into the 1’s and 0’s of computer science, we need to understand the 1’s and 0’s. Humans like to count things in decimal, otherwise known as base 10. Computers count things in binary. At their core, they’re a massive mechanism that uses switches, they can be turned on, or they can be turned off. There are only 2 states a switch can be in, not 10, so we have to learn how to count like a computer.
@@ -213,11 +252,11 @@ Let’s try counting a little. I’ll put the binary and decimal equivalent side
           0           0            
           1           1    Out of symbols. Increment digit to left and restart
          10           2    New digit
-         11           3    Out of symbols
-        100           4    New digit
-        101           5    Out of symbols
+         11           3    Out of symbols. 
+        100           4    New digit. Increment digit to left and restart
+        101           5    Out of symbols. 
         110           6
-        111           7    Out of symbols
+        111           7    Out of symbols.
        1000             8    New digit
        1001           9    Out of symbols
        1010          10
@@ -429,6 +468,8 @@ So 100101 — 011001 = 001100. You can try out the following problems if you wan
 
 
 
+Video 4: 
+Why important, lesson,  guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 Now on to hexadecimal. Hex is base 16. We don’t have enough colloquially known symbols, as we only made up the number symbols 0-9. The symbols we chose instead of 10, 11, 12, 13, 14, and 15 are the first six letters of the alphabet, ABCDEF.
 
 So counting in hex looks like this:
@@ -472,6 +513,12 @@ So counting in hex looks like this:
     ...
 
 The convention for denoting that a number is hex is by putting a 0x in front, 0x6F4C for example. If you want, you can practice addition and subtraction with hex, though it’s not necessary. It’s far more important to get used to arithmetic with binary than hex. It is useful, some would say necessary, to understand what hex is and have a feel for it.
+
+Show to convert between binary and hex
+
+Video 5:
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+
 What are computers and how do they work? – demystifying computer science.
 Computers store information on a bunch of switches that can be flipped one way to mean “on” and the other way to mean “off”. Let’s say they’re organized in a straight line.
 
@@ -486,18 +533,9 @@ If you wanted to know if bit 54 is on or off (remember, this is the 55th bit), y
 The names for these bytes are simply hexadecimal numbers. Remember that hexadecimal has 16 number symbols, 0123456789abcdef. ‘10’ in hex is equivalent 
 
 
-Emphasize how computer science is a bunch of simple tools that combine to do some wild shit.
-Emphasize the importance of specificity and being anal (compare it to checking grammar in an important email)
-Talk about tech elitism and deliberate use of language to increase barrier-to-entry. Anyone can learn to code. Just learn the lingo and practice a decent amount. It’s a job like any other. 
-These concepts are fairly simple to grasp, but the real trick is reproducing them on demand/combining them. 
-Don’t be afraid to google stuff. Real coders do it constantly. 
-Lesson 3: Javascript basics, why javascript?
-Lesson w/explanation of why is this important to larger project
-guided exercise to build something more complex/hint at future lessons
-solo exercises that build simple but actually useful things. Unit converter, etc. 
-solo solution explanation
-recap of lesson w/notes
-additional optional practice
+Video 6: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+Lesson 3: Javascript basics, why javascript, saving stuff properly, proper developer environment. 
 
 Javascript basics, why javascript, explain how all computing logic is similar so if you learn this one annoying language, the rest will be more straightforward.
 
@@ -510,6 +548,9 @@ You could even use other tools to cut an old backpack into pieces and make a cos
 With imagination and creativity, this simple tool can be used to do a wide variety of things beyond their most common uses. It’s just a sealed fabric with pockets and straps, but that’s enough to accomplish many things.
 
 If the way you want to use something is possible and accomplishes your task, it’s fair game.
+
+Video 7: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 
 Variables: spots in memory that you name and set to equal to chosen values
 let myName = Leo;
@@ -533,6 +574,9 @@ Now, whenever the computer sees myName, it still goes into section 0x001C5, only
 0x001C5 = myName = Tom
 
 We have everyone open developer console and give them stuff to do w variables
+
+Open Developer console and type xyz variable then hit enter.
+Now, change variable name to xys
 Ints: integers
 Computers are really, really good at doing things with numbers. So, we need to be able to input numbers. 
 
@@ -542,10 +586,29 @@ Sometimes numbers have decimals.
 Strings: stuff in quotes, usually words
 Computers are really good at organizing items in general. Sometimes those items are words. For example, “Leo” and “Tom.”  
 
+chartAt() function.
+Video 8: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+
 Operators:
 The 4 basics, plus modulo, and, or. Give people stuff to type. Add stuff, subtract stuff, etc. Explain PEMDAS. 
+Make variable xyz
+Make variable xyz
+Now, add/subtract/multiply/divide/mod/and/or
+
+Video 9: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+Logical operators
+
+Video 10: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 If/Else if/Else:
 Make the computer do different things under different circumstances. For example, if my name is Leo, say “hi leo”, but if my name is Tom, I want the computer to say “hi tom” and if my name isn’t Leo or Tom, I want the computer to say “Nice to meet you!”
+
+Literally have them make this example
+
+Video 11: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 Arrays: ordered lists of ints, strings, objects, etc. 
 We’ll talk about objects later; they’re cool.
 Remember how computers are really good at organizing items in general? Arrays let you make ordered lists that can combine integers, floats, strings, and objects (which we’ll cover soon). For example, someone’s name, address, age, and favorite version of pi could make an array. 
@@ -554,20 +617,40 @@ leoInfo = [“Leo”, “123 Main Street”, 23, 3.14159];
 tomInfo = [“Tom”, “456 Main Street”, 23, 3.14159265];
 
 Array vs Set – Arrays have an order, sets don’t. Think of a person’s case of weekly meds, they’re in order, versus a basket full of names on papers. The first is an ordered list of pills, the second is a big set of loose slips of paper with no order to them.
+
+Have them make an example array.
+Video 12: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 While loops: 
 While a condition is true/false, code runs. If/when the condition changes, code stops. 
 
 While my name is Leo, print out Leo’s info. Otherwise, print “hey, where’s Leo?”
+Video 13: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 For loops: 
 glorified counting machines that (usually) run a given process n number of times
 
 I want to print the word poop five times. I want to print every even number in this list. 
 
+Video 14: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+
 Functions: reusable chunks of code
 condenses lots of code into a single thing that can be run again and again. 
 
-Objects: 
+Video 15: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+Dictionaries (Called Objects):
+Key-value data structures with instant lookup of value given a key...
+
+If the key is one word, you don’t need quotes around the key. If it’s a multiple word key, you need double quotes “” (not single quotes! ‘’)
+
+Challenge: make a game resembling candyland with a for loop. We will provide the array for them to use so they don’t have to bang their heads making one if they don’t want to.
+Objects:
 Things with given properties. Compare to cookies. All cookies have a shape and type. Aka round chocolate chip, sugar cookies shaped like Christmas trees, etc.  
+
+Video 16: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 
 Classes: 
 Most common analogy is a cookie cutter and cookies. Tools that build objects. A cookie cutter makes it possible to assign cookies a shape.
@@ -575,13 +658,17 @@ Most common analogy is a cookie cutter and cookies. Tools that build objects. A 
 A dog is an object that breathes, eats, and barks. A human is an object that breathes, eats, and talks.
 
 
+Video 17/18: 
+Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
+
 Why is all this stuff important? How will it fit together eventually?
 
 Checkpoint: We walk them through the apartments problem. Then, we have them do it from scratch.
 
-If you can’t do this, do some review and come back to it. WE EXPECT THIS TO TAKE A FEW TRIES, SO NO RUSH!! It took me a few tries to understand these concepts the first time I learned! Show them how to outline their thinking in pseudo-code (sudocode?). 
+If you can’t do this, do some review and come back to it. WE EXPECT THIS TO TAKE A FEW TRIES, SO NO RUSH!! It took me a few tries to understand these concepts the first time I learned! Show them how to outline their thinking in pseudo-code. 
+
 Command Line Basics, why command line?- 
-How to use command line, why it’s useful/why we’re teaching this
+How to use command line, why it’s useful/why we’re teaching this. Help them push their stuff to git
 
 Lesson w/explanation of why is this important to larger project, 
 guided exercises, 
@@ -590,21 +677,10 @@ solo solution explanation,
 recap of lesson w/notes,
 additional optional practice
 
-HTML/CSS/Bootstrap Basics - Make it pretty!
 
-So, we’ve just done cool stuff in our developer console. How can we show other people? Teach them how to “animate” their code. 
-
-HTML: Raw website content. All the words, image links, everything. Show them all the basic heading and button options. 
-
-CSS: Make it look presentable and easy for user to follow. Show them all the basic styling options. Color, size, font, margins, padding. 
-
-JS: Make it functional. 
-
-This lesson itself is a metaphor for frontend: html is like the raw written lesson plan and boring recitation, css is like the neat, cool video format in which we present it, JS is the 
-
-
-
+-------------
 Progress Check: 
 If you can’t do this, do some review and come back to it. WE EXPECT THIS TO TAKE A FEW TRIES, SO NO RUSH!! It took me a few tries to understand these concepts the first time I learned!
 
 Have them copy a simple frontend site we design, with buttons and other js stuff that perform different functions. We give them a basic black/white template and layout, then let them choose their own colors/images and such. 
+-----------------
