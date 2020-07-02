@@ -267,10 +267,16 @@ find . -type d = list every directory recursively starting from current director
 find . -name “*.js” = list every file/directory recursively that ends with “.js”
 find . -name “*for*” = list every file/directory recursively that had the word “for” in it
 
-
 – – – – – – – – –
 
 grep = (Link to regex guide and lessons pending)
+
+– – – – – – – – –
+
+tree = display directory structure starting from current directory as a tree
+tree [directory] = display directory structure starting from passed in directory as a tree
+
+Note that you must provide the path to the directory (as always) when using tree [directory].
 
 – – – – – – – – –
 

@@ -132,7 +132,7 @@ Video notes: Sound is far, far more important than camera quality, especially si
 Lesson 1: Setup and Mindset
 Video 1: Welcome and introduction.
 
-Give my lil spiel about how coding is a skill anyone can learn (equating it to learning taxes, raising kids, etc.; “impossible”/seemingly difficult tasks that people still manage to learn). You’re learning how to harness computing power to complete tasks and build things; you don’t need to be some tech wizard with a math phD. Emphasize how computer science is a bunch of simple tools that combine to do some wild shit. 
+Give my lil spiel about how coding is a skill anyone can learn (equating it to learning taxes, raising kids, etc.; “impossible”/seemingly difficult tasks that people still manage to learn). You’re learning how to harness the power of computers to complete tasks and build things; you don’t need to be some tech wizard with a math phD. Emphasize how computer science is a bunch of simple tools that combine to do some wild shit. 
 
 Emphasize how computer science is a bunch of simple tools that combine to do some wild shit.
 Emphasize the importance of specificity and being anal (compare it to checking grammar in an important email)
@@ -313,7 +313,7 @@ This can help us figure out how much a binary number is worth in decimal. Let’
     110012=100002 + 010002 + 000012
 =24        + 23          + 20         = 16 + 8 + 1 = 25
 
-Where the second row is in decimal. This shows how to figure out that110012=2510. Your computer 
+Where the second row is in decimal. This shows how to figure out that110012=2510. Your computer stores the decimal numbers you type in binary, so on your screen you would type and see 25, but the computer will think of it as 11001.
 
 We can also add and subtract the usual way we do in decimal too:
 
@@ -684,3 +684,39 @@ If you can’t do this, do some review and come back to it. WE EXPECT THIS TO TA
 
 Have them copy a simple frontend site we design, with buttons and other js stuff that perform different functions. We give them a basic black/white template and layout, then let them choose their own colors/images and such. 
 -----------------
+Slides:
+
+Before we get into the 1’s and 0’s of computer science, we need to understand the 1’s and 0’s, which we call binary.
+
+Why is this important?
+Binary is the number system computers are built on. 
+Knowing binary makes it easier to understand computers. 
+Binary teaches us:
+How computer memory works.
+How computers store the letters and words you type.
+How to store certain information so it takes up less memory.
+And much more! But that’s for a few lessons down the road ;)
+
+Lesson:
+Relearning decimal
+Counting in Octal and Quaternary
+Counting in Binary
+Figuring out the decimal value of a binary number
+Figuring out the binary value of a decimal number
+Addition in Binary
+Subtraction in Binary
+Hexadecimal
+    
+Mini-Quizzes:
+-
+-
+-
+-
+-
+-
+guided exercises: 
+solo exercises:
+Guided walkthrough of solo exercises: 
+Common screw up section: 
+recap of lesson as last slide plus attached text file:
+
