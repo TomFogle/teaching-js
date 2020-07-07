@@ -128,6 +128,9 @@ Reminder 2: We’re going to draw stuff!! Don’t worry if every description mak
 
 Video notes: Sound is far, far more important than camera quality, especially since we’re doing a lot of screen-sharing/slides as opposed to videos of ourselves. We only really need videos of ourselves to a) introduce ourselves and b) introduce each new section. 
 
+Throw in certificate upon completion of the course.
+
+
 
 Lesson 1: Setup and Mindset
 Video 1: Welcome and introduction.
@@ -136,19 +139,20 @@ Give my lil spiel about how coding is a skill anyone can learn (equating it to l
 
 Emphasize how computer science is a bunch of simple tools that combine to do some wild shit.
 Emphasize the importance of specificity and being anal (compare it to checking grammar in an important email)
-Talk about tech elitism and deliberate use of language to increase barrier-to-entry. Anyone can learn to code. Just learn the lingo and practice a decent amount. It’s a job like any other. 
+Talk about tech elitism and deliberate use of language to increase barrier-to-entry. Anyone can learn to code. Just learn the lingo and practice a decent amount. It’s a job like any other. (use metaphor for learning a foreign language; they’re not talking about anything that complicated, it’s just a different language.)
 These concepts are fairly simple to grasp, but the real trick is reproducing them on demand/combining them. 
-Don’t be afraid to google stuff. Real coders do it constantly. StackOverflow, stack exchange, MDN, Medium
+Don’t be afraid to google stuff. Real coders do it constantly. StackOverflow, stack exchange, MDN, Medium.
+* Maybe a funny 10 second sketch remake of the popular “What people think coding is like vs what it’s actually like.” Leo and Tom hacker battling like “Aw fuck he broke into my main frame!! Oh yeah?!?! Well, take this!! DDoS attack!     ~GAHH!! How did he do that?!?! Well, I’ll have to use my secret weapon!! …”
+Actuality: *squints at a list of IPs on screen. Slowly copies and pastes into Terminal and runs a command to ssh into another person’s machine. Make horse lip roll sound.
 We organize all lessons as building up to a sicc project. Personal website, for instance?
 
 
-
 Video 2:
-
 Lesson Format:
- why is this important, 
+why is this important, 
+show them what the finished setup is going to look like (switching between coding and browser).
 lesson with mini quizzes as they go, 
-guided exercises, 
+guided exercises, have a rote memorization for acronyms like HTML, as in tell them to get a pencil and paper and write out what the acronym is 5 times. Have a glossary of acronyms.
 solo exercises, 
 Guided walkthrough of solo exercises, 
 Common screw up section, 
