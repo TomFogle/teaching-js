@@ -7,19 +7,46 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 	<link rel="stylesheet" href=leo-tom-freshweb.css>
 	</head>
 <body>
 	<header>
-		<img class="logo" src="images/ConfusedPenguin.png" alt="Penguin" style="width:64px; height:64px;">
-		<nav>
-			<ul class="nav-links">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Courses</a></li>
-				<li><a href="#">Penguin Photos</a></li>
-			</ul>
-		</nav>
-		<a class="cta" href="#"><button>Contact Us</button></a>
+		<div class="navbar">
+			<img class="logo" src="images/ConfusedPenguin.png" alt="Penguin" style="width:64px; height:64px;">
+			
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Course</a></li>
+					<li><a href="#">Penguin Photos</a></li>
+				</ul>
+			</nav>
+
+			<a class="cta" href="#"><button class="contact-btn">Contact Us</button></a>
+			
+			<div id="myLinks">
+			    <a href="#news">Home</a>
+			    <a href="#contact">Course</a>
+				<a href="#about">Penguin Photos</a>
+			</div>
+
+			<a href="javascript:void(0);" class="hamburger-icon" onclick="showMenu()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 	</header>
+
+	<script>
+	function showMenu() {
+		var x = document.getElementById("myLinks");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+	}
+	</script>
+
 </body>
 </html>

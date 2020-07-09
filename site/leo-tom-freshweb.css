@@ -11,22 +11,8 @@ body {
 	background-image: linear-gradient(90deg, #323d46 0%, #393f4d 3% 97%, #323d46 100%);
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	background-color: #1d1e22;
-}
-
-li, a, button {
-	background-color: #1d1e22;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	color: #e0e6e6;
-	text-decoration: none;
-}
-
-header {
+.navbar {
+	/*overflow: hidden;*/
 	background-color: #1d1e22;
 	background-image: linear-gradient(105deg, #131417 0%, #1d1e22 5% 95%, #131417 100%);
 	display: flex;
@@ -35,61 +21,101 @@ header {
 	padding: 30px 3%;
 }
 
-.cta {
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	background-color: #1d1e22;
+}
+
+.navbar .nav-links li, a {
+	background-color: #1d1e22;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #e0e6e6;
+	text-decoration: none;
+}
+
+.navbar #myLinks {
+	display: none;
+}
+
+.navbar .hamburger-icon {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+	background: black;
+	display: block;
+	right: 0;
+	top: 0;
+}
+
+.navbar .cta {
 	order: 3;
 	margin-left: auto;
 	padding: 0px 64px 0px 0px;
 }
 
-.logo {
+.navbar .logo {
 	cursor: pointer;
-	
 }
 
-.nav {
+.navbar .nav-links {
 	order: 2;
-}
-
-.nav-links {
 	list-style: none;
 }
 
-.nav-links li {
+.navbar .nav-links li {
 	display: inline-block;
 	padding: 0px 20px;
 }
 
-.nav-links li:nth-child(1) {
+.navbar .nav-links li:nth-child(1) {
 	padding: 0px 20px 0px 60px;
 }
 
-.nav-links li a {
+.navbar .nav-links li a {
 	color: #feda6a;
 	transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:active {
+.navbar .nav-links li a:active {
 	color: #c85870;
 }
 
-.nav-links li a:hover {
+.navbar .nav-links li a:hover {
 	color: #c82850;
 }
 
-button {
+.contact-btn {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
 	color: #ffffe6;
 	margin-left: 20px;
 	padding: 9px 25px;
-	background-color: rgba(100,20,40,1);
+	background-color: rgba(105,21,42,1);
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
 }
 
-button:hover {
-	background-color: rgba(100,20,40,0.8);
+.contact-btn:hover {
+	background-color: rgba(105,21,42,0.8);
 }
+
+
+@media screen and (max-width: 768px) {
+     {
+        display: none !important;
+    }
+}
+
+
 
 
 
