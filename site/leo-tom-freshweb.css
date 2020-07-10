@@ -27,7 +27,7 @@ body {
 	background-color: #1d1e22;
 }
 
-.navbar .nav-links li, a {
+#myLinks, .navbar .nav-links li, a {
 	background-color: #1d1e22;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
@@ -36,8 +36,14 @@ body {
 	text-decoration: none;
 }
 
-.navbar #myLinks {
+#myLinks {
 	display: none;
+}
+
+.navbar .cta {
+	order: 3;
+	margin-left: auto;
+	padding: 0px 64px 0px 0px;
 }
 
 .navbar .hamburger-icon {
@@ -45,17 +51,10 @@ body {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
-	display: block;
+	margin-left: auto;
 	background: black;
-	display: block;
 	right: 0;
 	top: 0;
-}
-
-.navbar .cta {
-	order: 3;
-	margin-left: auto;
-	padding: 0px 64px 0px 0px;
 }
 
 .navbar .logo {
@@ -109,13 +108,17 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-     {
-        display: none !important;
+@media screen and (min-width: 1268px) {
+    .navbar .hamburger-icon, #myLinks {
+    	display: none !important;
     }
 }
 
-
+@media screen and (max-width: 1268px) {
+    .navbar .nav-links, .cta {
+    	display: none !important;
+    }
+}
 
 
 
