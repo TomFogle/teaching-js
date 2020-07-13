@@ -1,5 +1,8 @@
 
 
+Swimming Blooper “Welcome to our course”
+Add livestream
+
 We Taught My Mom to Code: Full Stack Web Development and Python3 for Absolute Beginners
 
 What we offer:
@@ -169,6 +172,8 @@ So, we’ve just done cool stuff in our developer console. How can we show other
 HTML: Raw website content. All the words, image links, everything. Show them all the basic heading and button options. 
 
 CSS: Make it look presentable and easy for user to follow. Show them all the basic styling options. Color, size, font, margins, padding. 
+
+Color, size, font, insert images, margins, padding, flexbox. 
 
 JS: Make it functional. 
 
@@ -556,6 +561,12 @@ If the way you want to use something is possible and accomplishes your task, it�
 Video 7: 
 Why important, lesson, guided exercises, solo exercises, explanation of solo exercises, recap of lesson w/notes PDF.
 
+Razzle Dazzle/DevTools
+Variables
+Integers/Floats
+Strings
+Operators
+
 Variables: spots in memory that you name and set to equal to chosen values
 let myName = Leo;
 
@@ -724,3 +735,38 @@ Guided walkthrough of solo exercises:
 Common screw up section: 
 recap of lesson as last slide plus attached text file:
 
+    HTML basics:
+<!DOCTYPE html> — tell computer we are giving it html
+<head> — metadata (information about the stuff on your page, i.e. data about your data, hence metadata). Here you tell what kind of characters you are typing in (english, chinese, etc.) though everyone uses utf-8 at this point, which is a massive collection of the entire world’s symbols so everything runs smoothly everywhere. You can title your webpage, style it, among other things too.
+<body> — the meat and skeleton of your webpage. Your html and javascript go here. This tells the page the basic setup of what exists and how it should function. You could style things inline here too, though it is usually bad practice (inline meaning in the line of code you want the styling to apply too as opposed to in the <head> or a separate file where it would be all nice and organized and reusable). If you want to tell the page where things should go more specifically and what they should look like, you would do that in styling.
+<style> — where you would tell the page where things should go more specifically and what they should look like. You should do this either in the <head> section of your html (not inline if you can avoid it), or, even better, in a separate file called a CSS file and then write a line of code inside your <head> that essentially says “put all this styling code here where I would have typed it.” The reason for this is it makes your html file less bulky and it makes it possible to reuse that styling in any file you want using the one line of code that says “insert this styling here please.” We’ll talk about styling/making things pretty after going over how to make things in the first place.
+So what kind of things can we put in the <body> / on my webpage? We can put:
+Heading – bigger text that’s usually used for things like titles (articles, movies, etc.) These tags come in sizes 1-6, with 1 being huge and 6 being small: <h1> <h2> <h3> <h4> <h5> <h6>
+Paragraph – normal text that formats to a paragraph shape if lines of text run out of room. The paragraph tag looks like: <p>
+Button – a button that you can click. You would have to write some other stuff to tell the webpage what to do when the button is pressed. The button tag looks like: <button>
+Hyperlink – colloquially what we refer to as a link. It is a link to (usually) some other website or a different part of the same website – basically a link from one page to some other page. The link can be text, an image, or a button. The default is text. To make it an image or a button, you’d have to add a smidge of extra code to your link to make it display that instead of text. The hyperlink tag looks like: <a>
+Div – division element. It is used both to logically separate chunks of code from a human readability standpoint as well as group code together so that you can move them around, use javascript on them, and style them more easily. The div tag looks like: <div>
+Span – span element. It’s basically an inline <div>. You can be in the middle of some text within a paragraph <p> tag, isolate some words from the rest by putting <span>...</span> tags around them, and then do the same stuff to them that you can do with divs (move around, manipulate with javascript, style). The span tag looks like: <span>
+Tables
+-TH, TR, TD, thead, tbody
+Forms
+-They won’t do anything FOR NOW, this is all about looks
+-action: where to send data. Not useful rn
+-method: get vs. post. Our forms use post because it posts user data to database
+Input
+-text, username, password, submit, radio, checkbox, placeholder, etc
+Labels: Label tag, label “for” matches input “id”
+        -validations “Required”, change type to email 
+Radio and checkbox: name lets you connect radio buttons so that you can only choose 1
+
+
+    CSS basics:
+Linking to HTML
+When linking to stylesheets (especially during bootstrap example), emphasize that it is the equivalent of taking all that css code and plopping in into your <head> as if you wrote it yourself.
+Colors
+Borders
+Backgrounds
+Images
+
+
+    Bootstrap 4 Basics:
