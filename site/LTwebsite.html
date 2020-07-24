@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sleeksite.net</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=LTwebsite.css>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);"><img src="images/ConfusedPenguin.png" alt="Penguin" style="width:48px; height:48px;"></a>
+        <a href="#home" class="item-with-padding" class="active">Home</a>
+        <a href="#course" class="item-with-padding">Course</a>
+        <a href="#contact" class="item-with-padding">About</a>
+        <a href="#contact-lame" class="item-with-padding" id="contact-boring">Contact Us</a>
+        <a href="#about" class="contact"><button class="contact-btn">Contact Us</button></a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+    </div>
+
+    <h3 style="margin-left:20px; font-family:Montserrat; color: white;">Some text</h3>
+
+    <p style="margin-left:20px; font-size:20px; font-family:Montserrat; color:white;">Oh<br>my<br>word</p>
+
+    <script>
+    function showMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+</body>
+</html>

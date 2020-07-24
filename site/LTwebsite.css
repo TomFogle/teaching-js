@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+body {
+    margin: 0;
+    background-color: #393f4d;
+    background-image: linear-gradient(90deg, #323d46 0%, #393f4d 3% 97%, #323d46 100%);
+    font-family: Montserrat, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1d1e22;
+    background-image: linear-gradient(105deg, #131417 0%, #1d1e22 5% 95%, #131417 100%);
+    padding: 15px 0px;
+}
+
+.topnav a {
+    float: left;
+    display: inline-block;
+    color: #feda6a;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #c82850;
+}
+
+.topnav a.active {
+    color: #c85870;
+}
+
+.logo {
+    float: left;
+    display: inline-block;
+    padding: 0px 16px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav .item-with-padding {
+    padding: 15px 16px;
+}
+
+.contact {
+    float: right !important;
+    padding-top: 7px !important;
+    padding-right: 3% !important;
+}
+
+.contact-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffe6;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(105,21,42,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-btn:hover {
+    background-color: rgba(105,21,42,0.8);
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        padding-top: 15px;
+        float: right;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0px;
+        top: 15px;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .logo {
+        float: none;
+        display: block;
+    }
+    .topnav .item-with-padding {
+        padding: 10px 16px;
+    }
+    .contact {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #contact-boring {
+        display: none;
+    }
+}
