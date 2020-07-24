@@ -1,0 +1,24 @@
+
+body{
+	font-family: 'Ramabhadra', sans-serif;
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-image: url("https://images.unsplash.com/photo-1501812325367-78e47cf01c0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60")
+}
+}
+.box{
+	border: 1px black solid;
+}
+
+.flex{
+	display: flex;
+}
+
+img{
+	margin: 10px;
+	border: 1px dotted red;
+}
+
