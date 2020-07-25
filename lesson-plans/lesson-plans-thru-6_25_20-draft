@@ -1,4 +1,9 @@
+So, what can you expect from our course? 
+By the end, you’ll be proficient at front-end web development and the Python programming language. This is more than enough to build your own websites, web applications, and useful time-saving software. Our goal is not mastery. Given the timeframe of our course, or any other online bootcamp, that is not realistic. Our goal is to give you generalist skills that you can apply in almost any context, then choose which subfields to specialize in as per your own unique circumstances. 
+    
+University Replacement Therapy
 
+Learn CS on Twitch. Ask any questions and if we don’t know, we;ll figure it out together just for fun.
 
 Swimming Blooper “Welcome to our course”
 Add livestream
@@ -742,11 +747,36 @@ recap of lesson as last slide plus attached text file:
 <style> — where you would tell the page where things should go more specifically and what they should look like. You should do this either in the <head> section of your html (not inline if you can avoid it), or, even better, in a separate file called a CSS file and then write a line of code inside your <head> that essentially says “put all this styling code here where I would have typed it.” The reason for this is it makes your html file less bulky and it makes it possible to reuse that styling in any file you want using the one line of code that says “insert this styling here please.” We’ll talk about styling/making things pretty after going over how to make things in the first place.
 So what kind of things can we put in the <body> / on my webpage? We can put:
 Heading – bigger text that’s usually used for things like titles (articles, movies, etc.) These tags come in sizes 1-6, with 1 being huge and 6 being small: <h1> <h2> <h3> <h4> <h5> <h6>
-Paragraph – normal text that formats to a paragraph shape if lines of text run out of room. The paragraph tag looks like: <p>
-Button – a button that you can click. You would have to write some other stuff to tell the webpage what to do when the button is pressed. The button tag looks like: <button>
-Hyperlink – colloquially what we refer to as a link. It is a link to (usually) some other website or a different part of the same website – basically a link from one page to some other page. The link can be text, an image, or a button. The default is text. To make it an image or a button, you’d have to add a smidge of extra code to your link to make it display that instead of text. The hyperlink tag looks like: <a>
-Div – division element. It is used both to logically separate chunks of code from a human readability standpoint as well as group code together so that you can move them around, use javascript on them, and style them more easily. The div tag looks like: <div>
-Span – span element. It’s basically an inline <div>. You can be in the middle of some text within a paragraph <p> tag, isolate some words from the rest by putting <span>...</span> tags around them, and then do the same stuff to them that you can do with divs (move around, manipulate with javascript, style). The span tag looks like: <span>
+Paragraph – normal text that formats to a paragraph shape if lines of text run out of room.
+The paragraph tag looks like: <p>
+Button – a button that you can click. You would have to write some other stuff to tell the webpage what to do when the button is pressed.
+The button tag looks like: <button>
+Hyperlink – colloquially what we refer to as a link. It is a link to (usually) some other website or a different part of the same website – basically a link from one page to some other page. The link can be text, an image, or a button. You write out the text, image, or button between the <a>...</a> tags. We usually use it to link to another page, but all a link does in computer science is tell it to, stop, go to some other code, and read from there. A web page is just html code (and javascript, etc.), so a link to another page is really just telling the computer to go there and read that code. Because of this, we don’t have to link to html only, we could link to javascript code. So a link could be clicked and then execute some javascript code if you chose to link it to javascript code. 
+The hyperlink tag looks like: <a>
+If you want to link to google using the text “Go to google”
+<a href="https://www.google.com"">Go to google</a>
+
+If you want to link to google using a png image of their logo that you downloaded into the same folder as your html code:
+<a href="https://www.google.com"><img src="logo.png"></a>
+
+If you have a function named “myFunkyFunction()” defined somewhere in your html:
+<a href="javascript:myFunkyFunction();">Execute JavaScript</a>
+
+If you have an element on your page with the id “section2”
+(ex: <p id=”section2”>Go to Section 2</p>) and you want the user to be able to click a link that says “Go to Section 2” and have the page jump them to Section 2:
+<a href="#section2">Go to Section 2</a>
+
+                Bonus:
+If you want the user to click a text link and open up their computer’s default mail application with a draft to a specific email:
+<a href="mailto:someone@example.com">Send email</a>
+
+If you want to have the link open up a user’s phone application ready to call a specific phone number:
+<a href="tel:+19834857765">Call: +1 983 485 7765</a>
+
+Div – division element. It is used both to logically separate chunks of code from a human readability standpoint as well as group code together so that you can move them around, use javascript on them, and style them more easily.
+The div tag looks like: <div>
+Span – span element. It’s basically an inline <div>. You can be in the middle of some text within a paragraph <p> tag, isolate some words from the rest by putting <span>...</span> tags around them, and then do the same stuff to them that you can do with divs (move around, manipulate with javascript, style).
+The span tag looks like: <span>
 Tables
 -TH, TR, TD, thead, tbody
 Forms
@@ -757,16 +787,88 @@ Input
 -text, username, password, submit, radio, checkbox, placeholder, etc
 Labels: Label tag, label “for” matches input “id”
         -validations “Required”, change type to email 
-Radio and checkbox: name lets you connect radio buttons so that you can only choose 1
+Radio, checkbox, button: name lets you connect radio buttons so that you can only choose 1. Add “value” to choose how you store each choice. Can be different than the choice.
+Select - dropdown menu
+-Option tag to add options
+Textarea: rows=”” cols=””
 
 
     CSS basics:
 Linking to HTML
-When linking to stylesheets (especially during bootstrap example), emphasize that it is the equivalent of taking all that css code and plopping in into your <head> as if you wrote it yourself.
-Colors
+When linking to stylesheets (especially during bootstrap example), emphasize that it is the equivalent of taking all that css code and plopping it into your <head> as if you wrote it yourself.
+<link rel="stylesheet" href="leo-tom-website.css">
+Href should contain the EXACT NAME of your css documents, including capital/lowercase. Now, let’s test to make sure they’re linked. 
+Colors/backgrounds
+In CSS, we start with which part of the HTML we want to edit. For example, the body. Here’s some googling practice. Pause the video. Go to google and search “change background color CSS”. Then, change your background color to anything you want. If you have trouble, unpause the video and follow along with me. 
+Divs (again)
+We use divs and spans to select specific portions of our document. Let’s make some text, then place it inside a div. Next, we’ll add a border. 
 Borders
-Backgrounds
 Images
+We can also use classes and IDs to group specific elements together. Classes let you group multiple elements. IDs let you single out elements. We’re going to add a few image files, then give them all the same class. Then, we’re going to center them. 
+Make an image our background, unsplash.com for cool images. 
+Margins
+Padding
+These allow us to add space within and around items.
+Flexbox/centering content
+This lets you position content more precisely on the page. 
+
+Video 1: Welcome and introduction.
+
+Give my lil spiel about how coding is a skill anyone can learn (equating it to learning taxes, raising kids, etc.; “impossible”/seemingly difficult tasks that people still manage to learn). You’re learning how to harness the power of computers to complete tasks and build things; you don’t need to be some tech wizard with a math phD. Emphasize how computer science is a bunch of simple tools that combine to do some wild shit. 
+
+Emphasize how computer science is a bunch of simple tools that combine to do some wild shit.
+Emphasize the importance of specificity and being anal (compare it to checking grammar in an important email)
+Talk about tech elitism and deliberate use of language to increase barrier-to-entry. Anyone can learn to code. Just learn the lingo and practice a decent amount. It’s a job like any other. (use metaphor for learning a foreign language; they’re not talking about anything that complicated, it’s just a different language.)
+These concepts are fairly simple to grasp, but the real trick is reproducing them on demand/combining them. 
+Don’t be afraid to google stuff. Real coders do it constantly. StackOverflow, stack exchange, MDN, Medium.
+* Maybe a funny 10 second sketch remake of the popular “What people think coding is like vs what it’s actually like.” Leo and Tom hacker battling like “Aw fuck he broke into my main frame!! Oh yeah?!?! Well, take this!! DDoS attack!     ~GAHH!! How did he do that?!?! Well, I’ll have to use my secret weapon!! …”
+Actuality: *squints at a list of IPs on screen. Slowly copies and pastes into Terminal and runs a command to ssh into another person’s machine. Make horse lip roll sound.
+We organize all lessons as building up to a sicc project. Personal website, for instance?
 
 
-    Bootstrap 4 Basics:
+
+
+
+Let’s talk about the mindset with which we want you to approach our course. First and foremost, coding is tough, but not impossible for anyone with a good work ethic. It’s the same as being a lawyer, doctor, accountant, electrician, or any job that requires learning technical skills. 
+
+If you learned how to raise kids, or speak a foreign language, or play a sport, you can learn how to code.
+
+Just like anything else in life, if you put in the time and effort, you will succeed.
+
+Part of what makes computer science intimidating to newcomers is the tendency of professional communities to use excessive technical jargon to make themselves sound smarter than you. They are not. The computer science dictionary of buzzwords, domain-specific words, and acronyms is useful once you know it, but are pretentious and meaningless to use in conversation with anyone who is not also working in the same specific realm of computer science – it’s even usually unhelpful to use when talking to other computer science professionals who aren’t working in the same specific area simply because they haven’t learned the lingo of that subfield.
+
+
+Here are some examples of complicated computer science terms than are much simpler  than they sound:
+A server is a computer that has to stay on and send data to other computers when they ask for it. If you visit a website, some poor computer out there is sitting in an office or someone’s house has the website files stored on it and is on and ready to send you the instructions that your computer needs to display the words and pretty pictures.
+Another popular one is the cloud. For many people, there’s an element of magic to it, where data somehow floats around in the sky. In short, a cloud is a bunch of computers that coordinate with each other to store data and share that data with things like your mac or iphone. They have computers that mainly store data and computers that mainly serve data. Why have many computers spread out all over the country instead of a few massive ones close to each other? For one, distance matters, so having computers in one spot could be slow for users who aren’t near any servers. The large number of computers spread out forming a computer “mist” is reminiscent of how a cloud is a bunch of water molecules forming a mist. Another benefit of a cloud becomes clear if there’s a power outage or a computer gets hacked
+
+ETL pipeline: Extract, transform, and load. Extract means get data from somewhere, usually some website that has a file ready to download. Transform it means filter out things you don’t want, organize it how you want, etc. Load means store your transformed data somewhere. That’s all. In practice, all this usually means: fetch data, clean data, store data, graph data. 
+
+A good metaphor is comparing computer science to a foreign language. If you went to Mexico and listened to people speaking Spanish, you’d probably feel lost and overwhelmed. But if you took the time to learn Spanish, you’d understand almost everything. 
+
+    Moreover, a lot of computer science is building on simple concepts with more simple concepts that add up to something complicated. If you can master the simple concepts, the complicated parts won’t seem so complicated anymore. 
+
+    Even more moreover (Tom: that doesn’t make sense Leo: shut up), professional coders use google. All the time. Like, every day. It’s an accepted part of the profession and no one will think less of you for doing it. If you don’t know something, look up the answer! There’s no reason to memorize things if you don’t have to. 
+
+    To recap, you can code. It doesn’t matter how old you are, how good you are at math, or how experienced you are at using a computer. It’s a skill like any other. If you put in effort, you will succeed. 
+
+    Without further ado, let’s get started.
+
+
+Welcome, let’s get you into the right mindset before starting this course. 
+If you learned how to raise kids, speak a foreign language, or play a sport, you can learn how to code. Just like anything else in life, if you put in the time and effort, you will succeed.
+Some people who code, unfortunately, often use excessive technical jargon to make themselves sound smarter than you. They are not. Here are some examples...
+A good metaphor is comparing computer science to a foreign language. If you went to Mexico and listened to people speaking Spanish, you’d probably feel lost and overwhelmed. But if you took the time to learn Spanish words and how to use them, you’d understand it.
+Moreover, a lot of computer science is many simple concepts that build on each other and create something more complex and cool. If you can master the simple concepts, the complicated parts won’t seem so complicated anymore. 
+Googling stuff is part of the job
+To recap, you can code. It doesn’t matter how old you are, how good you are at math, or how experienced you are at using a computer. It’s a skill like any other. If you put in effort, you will succeed. Let’s get started.
+Not that hard,
+
+Language is complicated
+
+Google exists
+
+
+
+
+
